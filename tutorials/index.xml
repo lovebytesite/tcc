@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tiny Code Christmas</title>
-    <link>/tutorials/</link>
+    <link>https://tcc.lovebyte.party/tutorials/</link>
     <description>Recent content on Tiny Code Christmas</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://tcc.lovebyte.party/tutorials/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

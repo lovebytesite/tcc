@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://tcc.lovebyte.party/</loc>
   </url><url>
-    <loc>/tutorials/</loc>
+    <loc>https://tcc.lovebyte.party/tutorials/</loc>
   </url><url>
-    <loc>/about/</loc>
+    <loc>https://tcc.lovebyte.party/about/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://tcc.lovebyte.party/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://tcc.lovebyte.party/tags/</loc>
   </url>
 </urlset>
