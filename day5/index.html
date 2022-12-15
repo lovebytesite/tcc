@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>The Fifth Day of Tiny Code :: Tiny Code Christmas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tiny Code Christmas - Day 5 Welcome to Day 5 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today we’re going to look at our second demoscene effect: tunnels. A tunnel effect is created using polar coordinates combined with a time value to animate it. We&amp;rsquo;ll be taking a look at the atan2 function and using it to create our tunnel." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://tcc.lovebyte.party/day5/" />
+
+
+
+
+<link rel="stylesheet" href="https://tcc.lovebyte.party/assets/style.css">
+
+  <link rel="stylesheet" href="https://tcc.lovebyte.party/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://tcc.lovebyte.party/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://tcc.lovebyte.party/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Fifth Day of Tiny Code">
+<meta property="og:description" content="Tiny Code Christmas - Day 5 Welcome to Day 5 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today we’re going to look at our second demoscene effect: tunnels. A tunnel effect is created using polar coordinates combined with a time value to animate it. We&amp;rsquo;ll be taking a look at the atan2 function and using it to create our tunnel." />
+<meta property="og:url" content="https://tcc.lovebyte.party/day5/" />
+<meta property="og:site_name" content="Tiny Code Christmas" />
+
+  
+    <meta property="og:image" content="https://tcc.lovebyte.party/img/favicon/red.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="red">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Tiny Code Christmas 2022
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">     Home</a></li>
+        
+      
+        
+          <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+        
+      
+        
+          <li><a href="/about"> About</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">     Home</a></li>
+      
+    
+      
+        <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+      
+    
+      
+        <li><a href="/about"> About</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://tcc.lovebyte.party/day5/">The Fifth Day of Tiny Code</a></h1>
+  <div class="post-meta">
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="tiny-code-christmas---day-5">Tiny Code Christmas - Day 5<a href="#tiny-code-christmas---day-5" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Welcome to Day 5 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the <a href="https://tcc.lovebyte.party/">overview</a>, and start at <a href="/day1">Day 1</a>! You can start whenever you like, there are no deadlines!</p>
+<p>Today we’re going to look at our second demoscene effect: tunnels. A tunnel effect is created using polar coordinates combined with a time value to animate it. We&rsquo;ll be taking a look at the atan2 function and using it to create our tunnel. Tune in tomorrow to find out how to make a sine scroller!</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/t3cu50bUtPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="the-challenge-sines-of-the-times">The Challenge: Sines of the times!<a href="#the-challenge-sines-of-the-times" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>The <strong>first challenge</strong> is to get an animated tunnel effect on the screen!
+Use two for loops to address every pixel, and use the polar coordinates to set the colour!</p>
+<p>You can check out our Day 5 video above for an overview on this type of effect.</p>
+
+  <figure class="center" >
+    <img src="/day5.gif"  alt="An Example of the Day 5 Challenge completed with TIC-80"   style="border-radius: 8px;"  />
+    
+      <figcaption class="center" >An Example of the Day 5 Challenge completed with TIC-80!</figcaption>
+    
+  </figure>
+
+
+<p>The <strong>second challenge</strong> is to keep your effect at a maximum of 256 characters. You should have plenty of room to play around and come up with an awesome effect.</p>
+<h1 id="the-expert-challenge">The Expert Challenge<a href="#the-expert-challenge" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>These expert challenges will push your sizecoding knowledge to the limit! We will be adding expert challenges to most days so check out the previous challenges too!</p>
+<ul>
+<li>Animated moving tunnel effect</li>
+<li>with pattern</li>
+<li>z-perspective</li>
+<li>TIC-80: 100 characters or less</li>
+<li>PICO-8: 80 characters or less</li>
+</ul>
+<p><img src="/day5expico.gif" alt="Day 5 Expert Challenge completed by Superogue"></p>
+<h1 id="sharing-is-caring">Sharing is Caring!<a href="#sharing-is-caring" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>If you feel like it, why not share what you’ve done with us on the <a href="https://discord.gg/pUS5kCJTzp">LoveByte Discord</a>, #lovebyte on IRCnet, or share on <a href="https://mobile.twitter.com/lovebyteparty">Twitter</a> and <a href="https://graphics.social/@lovebyteparty">Mastodon</a> using the hashtag #lovebytetcc</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://tcc.lovebyte.party/assets/main.js"></script>
+<script src="https://tcc.lovebyte.party/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
