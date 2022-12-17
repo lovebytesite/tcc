@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>The Sixth Day of Tiny Code :: Tiny Code Christmas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tiny Code Christmas - Day 6 Welcome to Day 6 of Tiny Code Christmas! We&amp;rsquo;re half way there, can you believe it!? If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+NB: Check out the Field-FX Saturday morning stream this morning for a demoshow and some Tiny Code Christmas content!
+Today we’re going to look at a classic demoscene effect: the sine scroller." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://tcc.lovebyte.party/day6/" />
+
+
+
+
+<link rel="stylesheet" href="https://tcc.lovebyte.party/assets/style.css">
+
+  <link rel="stylesheet" href="https://tcc.lovebyte.party/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://tcc.lovebyte.party/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://tcc.lovebyte.party/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Sixth Day of Tiny Code">
+<meta property="og:description" content="Tiny Code Christmas - Day 6 Welcome to Day 6 of Tiny Code Christmas! We&amp;rsquo;re half way there, can you believe it!? If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+NB: Check out the Field-FX Saturday morning stream this morning for a demoshow and some Tiny Code Christmas content!
+Today we’re going to look at a classic demoscene effect: the sine scroller." />
+<meta property="og:url" content="https://tcc.lovebyte.party/day6/" />
+<meta property="og:site_name" content="Tiny Code Christmas" />
+
+  
+    <meta property="og:image" content="https://tcc.lovebyte.party/img/favicon/red.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="red">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Tiny Code Christmas 2022
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">     Home</a></li>
+        
+      
+        
+          <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+        
+      
+        
+          <li><a href="/about"> About</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">     Home</a></li>
+      
+    
+      
+        <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+      
+    
+      
+        <li><a href="/about"> About</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://tcc.lovebyte.party/day6/">The Sixth Day of Tiny Code</a></h1>
+  <div class="post-meta">
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="tiny-code-christmas---day-6">Tiny Code Christmas - Day 6<a href="#tiny-code-christmas---day-6" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Welcome to Day 6 of Tiny Code Christmas! We&rsquo;re half way there, can you believe it!? If you’re just joining us don’t forget to check out the <a href="https://tcc.lovebyte.party/">overview</a>, and start at <a href="/day1">Day 1</a>! You can start whenever you like, there are no deadlines!</p>
+<p><strong>NB:</strong> Check out the <a href="https://www.twitch.tv/fieldfxdemo">Field-FX Saturday morning stream</a> this morning for a demoshow and some Tiny Code Christmas content!</p>
+<p>Today we’re going to look at a classic demoscene effect: the sine scroller. A sine scroller effect is created using sin values to modulate the y coordinate of each letter of a piece of text individually. We&rsquo;ll be taking a look at how to animate each character individually to animate our scroller.</p>
+<p><strong>Since it&rsquo;s the weekend and you might want to get in a bit more programming, we&rsquo;ve also opened up the <a href="/day7">Day 7 challenge</a>, the video will release on Sunday as normal at 9am GMT but you don&rsquo;t need it for the challenge.</strong></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/tFv_Mv02x4E" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h1 id="the-challenge-hello-demoscene">The Challenge: Hello, Demoscene!<a href="#the-challenge-hello-demoscene" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>The <strong>first challenge</strong> is to get an animated sine scroller effect on the screen!
+Use a for loop to cycle through each character and animate its height with a sin value!</p>
+<p>You can check out our Day 6 video above for an overview on this type of effect.</p>
+
+  <figure class="center" >
+    <img src="/day6.gif"  alt="An Example of the Day 6 Challenge completed with TIC-80"   style="border-radius: 8px;"  />
+    
+      <figcaption class="center" >An Example of the Day 6 Challenge completed with TIC-80!</figcaption>
+    
+  </figure>
+
+
+<p>The <strong>second challenge</strong> is to keep your effect at a maximum of 256 characters. You should have plenty of room to play around with adding a background effect also, but you can always try for 128 if you need a bit more of a challenge!</p>
+<h1 id="the-expert-challenge">The Expert Challenge<a href="#the-expert-challenge" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>These expert challenges will push your sizecoding knowledge to the limit! We will be adding expert challenges to most days so check out the previous challenges too!</p>
+<ul>
+<li>Use the scrolltext &ldquo;this is the expert scroller!&rdquo;</li>
+<li>use a non-standard, non-chaotic, complex or stacked sine-wave pattern</li>
+<li>have the scroll cycle colors</li>
+<li>TIC-80: 128 characters or less</li>
+<li>PICO-8: 120 characters or less</li>
+</ul>
+
+  <figure class="center" >
+    <img src="/day6extic.gif"  alt="An Example of the Day 6 Expert Challenge completed with TIC-80"   style="border-radius: 8px;"  />
+    
+      <figcaption class="center" >An Example of the Day 6 Challenge on TIC-80 by Superogue!</figcaption>
+    
+  </figure>
+
+
+<h1 id="sharing-is-caring">Sharing is Caring!<a href="#sharing-is-caring" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>If you feel like it, why not share what you’ve done with us on the <a href="https://discord.gg/pUS5kCJTzp">LoveByte Discord</a>, #lovebyte on IRCnet, or share on <a href="https://mobile.twitter.com/lovebyteparty">Twitter</a> and <a href="https://graphics.social/@lovebyteparty">Mastodon</a> using the hashtag #lovebytetcc</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://tcc.lovebyte.party/assets/main.js"></script>
+<script src="https://tcc.lovebyte.party/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
