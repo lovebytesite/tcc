@@ -168,6 +168,56 @@ Use two for loops to address every pixel, and use the polar coordinates to set t
     </item>
     
     <item>
+      <title>The Fifth Day of Tiny Code Christmas Extra</title>
+      <link>https://tcc.lovebyte.party/day5extra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day5extra/</guid>
+      <description>Tiny Code Christmas - Day 5 - EXTRA Welcome to Day 5 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!
+If you haven’t already, read the overview to find out what Tiny Code Christmas is all about!
+The Challenge: Flyover!</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-5---extra&#34;&gt;Tiny Code Christmas - Day 5 - EXTRA&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 5 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!&lt;/p&gt;
+&lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/83CifrvXw1c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;the-challenge-flyover&#34;&gt;The Challenge: Flyover!&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;challenge&lt;/strong&gt; is to make the smallest implementation you can of the combined rotation code from yesterday and perspective code from today while keeping the center of rotation moving.&lt;/p&gt;
+&lt;h2 id=&#34;tic-80&#34;&gt;TIC-80&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TIC&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;time()&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;399&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;135&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;239&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   Z&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;math.abs(y&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   u&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;Z
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   v&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;99&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;Z
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   c&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(u&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;(v&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   pix(x,y,c&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pico-8&#34;&gt;PICO-8&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_draw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;time()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3500&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rnd(&lt;span style=&#34;color:#ae81ff&#34;&gt;127&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rnd(&lt;span style=&#34;color:#ae81ff&#34;&gt;127&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   z&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;abs(y&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   u&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;z
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   v&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;99&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;z
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   c&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(u&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;v
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   pset(x,y,c)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>The First Day of Tiny Code Christmas</title>
       <link>https://tcc.lovebyte.party/day1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -347,56 +397,6 @@ The Challenge: Roto!</description>
     </item>
     
     <item>
-      <title>The Fourth Day of Tiny Code Christmas Extra</title>
-      <link>https://tcc.lovebyte.party/day5extra/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tcc.lovebyte.party/day5extra/</guid>
-      <description>Tiny Code Christmas - Day 5 - EXTRA Welcome to Day 5 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!
-If you haven’t already, read the overview to find out what Tiny Code Christmas is all about!
-The Challenge: Flyover!</description>
-      <content>&lt;h1 id=&#34;tiny-code-christmas---day-5---extra&#34;&gt;Tiny Code Christmas - Day 5 - EXTRA&lt;/h1&gt;
-&lt;p&gt;Welcome to Day 5 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!&lt;/p&gt;
-&lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/83CifrvXw1c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;the-challenge-flyover&#34;&gt;The Challenge: Flyover!&lt;/h2&gt;
-&lt;p&gt;The &lt;strong&gt;challenge&lt;/strong&gt; is to make the smallest implementation you can of the combined rotation code from yesterday and perspective code from today while keeping the center of rotation moving.&lt;/p&gt;
-&lt;h2 id=&#34;tic-80&#34;&gt;TIC-80&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TIC&lt;/span&gt;()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;time()&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;399&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;135&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;239&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   Z&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;math.abs(y&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   u&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;Z
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   v&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;99&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;Z
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   c&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(u&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t)&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;(v&lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   pix(x,y,c&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pico-8&#34;&gt;PICO-8&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_draw&lt;/span&gt;()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;time()
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; n&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3500&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rnd(&lt;span style=&#34;color:#ae81ff&#34;&gt;127&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;rnd(&lt;span style=&#34;color:#ae81ff&#34;&gt;127&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   z&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;abs(y&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   u&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(x&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;z
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   v&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;99&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;z
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   c&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(u&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t)&lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&lt;/span&gt;v
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   pset(x,y,c)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
-&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
       <title>The Second Day of Tiny Code Christmas</title>
       <link>https://tcc.lovebyte.party/day2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -515,6 +515,149 @@ The Challenge: Enter the Metaverse!</description>
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  d2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;distance(x2,y2,x,y)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  dist &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; d1&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;d2
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pset(x,y,min(dist,&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>The Seventh Day of Tiny Code</title>
+      <link>https://tcc.lovebyte.party/day7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day7/</guid>
+      <description>Tiny Code Christmas - Day 7 Welcome to Day 7 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+There is no challenge specific video today, instead we have a video filled with general sizecoding tips and tricks! The video will be available on Sunday at 9am GMT!</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-7&#34;&gt;Tiny Code Christmas - Day 7&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 7 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt;, and start at &lt;a href=&#34;https://tcc.lovebyte.party/day1&#34;&gt;Day 1&lt;/a&gt;! You can start whenever you like, there are no deadlines!&lt;/p&gt;
+&lt;p&gt;There is no challenge specific video today, instead we have a video filled with general sizecoding tips and tricks! The video will be available on Sunday at 9am GMT!&lt;/p&gt;
+&lt;h1 id=&#34;the-challenge-mix-and-match&#34;&gt;The Challenge: Mix and Match!&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;first challenge&lt;/strong&gt; is to combine some of the techniques you have learned over the week into an effect! Playing around with mixing different effects is a great way to spark creativity! You could combine your Day 2 scene with a scroller to create an animated Christmas Card or go hard and great a xor-plasma-tunnel-scroller-christmas-tree!&lt;/p&gt;
+&lt;p&gt;Our Day 7 video above is about general sizecoding tips and tricks that may help you, but it&amp;rsquo;s not necessary so you can even start early!&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;second challenge&lt;/strong&gt; is to keep your effect at a maximum of 256 characters.&lt;/p&gt;
+&lt;h1 id=&#34;the-expert-challenge&#34;&gt;The Expert Challenge&lt;/h1&gt;
+&lt;p&gt;These is no expert challenge today other than to push yourself to the limit, or take it easy, it is Sunday after all!&lt;/p&gt;
+&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>The Sixth Day of Tiny Code</title>
+      <link>https://tcc.lovebyte.party/day6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day6/</guid>
+      <description>Tiny Code Christmas - Day 6 Welcome to Day 6 of Tiny Code Christmas! We&amp;rsquo;re half way there, can you believe it!? If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today we’re going to look at a classic demoscene effect: the sine scroller. A sine scroller effect is created using sin values to modulate the y coordinate of each letter of a piece of text individually.</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-6&#34;&gt;Tiny Code Christmas - Day 6&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 6 of Tiny Code Christmas! We&amp;rsquo;re half way there, can you believe it!? If you’re just joining us don’t forget to check out the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt;, and start at &lt;a href=&#34;https://tcc.lovebyte.party/day1&#34;&gt;Day 1&lt;/a&gt;! You can start whenever you like, there are no deadlines!&lt;/p&gt;
+&lt;p&gt;Today we’re going to look at a classic demoscene effect: the sine scroller. A sine scroller effect is created using sin values to modulate the y coordinate of each letter of a piece of text individually. We&amp;rsquo;ll be taking a look at how to animate each character individually to animate our scroller.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Since it&amp;rsquo;s the weekend and you might want to get in a bit more programming, we&amp;rsquo;ve also opened up the &lt;a href=&#34;https://tcc.lovebyte.party/day7&#34;&gt;Day 7 challenge&lt;/a&gt;, the video  on Sunday is a general video on sizecoding tips and will release as normal at 9am GMT but you don&amp;rsquo;t need it for the challenge.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/qUOlRYzs4_s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&#34;the-challenge-hello-demoscene&#34;&gt;The Challenge: Hello, Demoscene!&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;first challenge&lt;/strong&gt; is to get an animated sine scroller effect on the screen!
+Use a for loop to cycle through each character and animate its height with a sin value!&lt;/p&gt;
+&lt;p&gt;You can check out our Day 6 video above for an overview on this type of effect.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://tcc.lovebyte.party/day6.gif&#34;  alt=&#34;An Example of the Day 6 Challenge completed with TIC-80&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;An Example of the Day 6 Challenge completed with TIC-80!&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;The &lt;strong&gt;second challenge&lt;/strong&gt; is to keep your effect at a maximum of 256 characters. You should have plenty of room to play around with adding a background effect also, but you can always try for 128 if you need a bit more of a challenge!&lt;/p&gt;
+&lt;h1 id=&#34;the-expert-challenge&#34;&gt;The Expert Challenge&lt;/h1&gt;
+&lt;p&gt;These expert challenges will push your sizecoding knowledge to the limit! We will be adding expert challenges to most days so check out the previous challenges too!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the scrolltext &amp;ldquo;this is the expert scroller!&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;use a non-standard, non-chaotic, complex or stacked sine-wave pattern&lt;/li&gt;
+&lt;li&gt;have the scroll cycle colors&lt;/li&gt;
+&lt;li&gt;TIC-80: 128 characters or less&lt;/li&gt;
+&lt;li&gt;PICO-8: 120 characters or less&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://tcc.lovebyte.party/day6extic.gif&#34;  alt=&#34;An Example of the Day 6 Expert Challenge completed with TIC-80&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;An Example of the Day 6 Challenge on TIC-80 by Superogue!&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>The Sixth Day of Tiny Code Christmas Extra</title>
+      <link>https://tcc.lovebyte.party/day6extra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day6extra/</guid>
+      <description>Tiny Code Christmas - Day 6 - EXTRA Welcome to Day 6 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!
+If you haven’t already, read the overview to find out what Tiny Code Christmas is all about!
+The Challenge: Rasterbars!</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-6---extra&#34;&gt;Tiny Code Christmas - Day 6 - EXTRA&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 6 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!&lt;/p&gt;
+&lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Y9Lpv2Zw210&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;the-challenge-rasterbars&#34;&gt;The Challenge: Rasterbars!&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;challenge&lt;/strong&gt; is to make the smallest implementation you can of the provided code.&lt;/p&gt;
+&lt;h2 id=&#34;tic-80&#34;&gt;TIC-80&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TIC&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; cls()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;time()&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; sin&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;math.sin
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ly&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  sv&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sin(t&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;ly&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; lx&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   line(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;lx&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;sv&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;240&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;lx&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;sv&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;,lx&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;67&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  sv&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sin(i&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;sin(i&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   line(sv&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,sv&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;136&lt;/span&gt;,j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pico-8&#34;&gt;PICO-8&lt;/h2&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;https://liquidream.co.uk&#34;&gt;Liquidream&lt;/a&gt; for helpfully provided a PICO-8 palette that is suitable for gradient usage, compressed using 2DArray&amp;rsquo;s Palette Maker.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;⁶!5f100█2☉9:⌂⬅️⬇️1▒😐&amp;lt;765&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;_draw&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; cls()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;time()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ly&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  sv&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sin(t&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;ly&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; lx&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   line(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;lx&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;sv&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;lx&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;sv&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;,lx&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  sv&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sin(i&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;sin(i&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   line(sv&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,sv&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;128&lt;/span&gt;,j&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
