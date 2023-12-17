@@ -123,7 +123,7 @@ Check out this short explainer video:&lt;/p&gt;
     </item>
     
     <item>
-      <title>The Fifth Day of Tiny Code</title>
+      <title>The Fifth Day of Tiny Code Christmas</title>
       <link>https://tcc.lovebyte.party/day5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -293,7 +293,7 @@ If you’re reading this on the 11th, check out the Field-FX Monday Night Bytes 
     </item>
     
     <item>
-      <title>The Fourth Day of Tiny Code</title>
+      <title>The Fourth Day of Tiny Code Christmas</title>
       <link>https://tcc.lovebyte.party/day4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -524,7 +524,7 @@ The Challenge: Enter the Metaverse!</description>
     </item>
     
     <item>
-      <title>The Seventh Day of Tiny Code</title>
+      <title>The Seventh Day of Tiny Code Christmas</title>
       <link>https://tcc.lovebyte.party/day7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -534,6 +534,11 @@ There is no challenge specific video today, instead we have a video filled with 
       <content>&lt;h1 id=&#34;tiny-code-christmas---day-7&#34;&gt;Tiny Code Christmas - Day 7&lt;/h1&gt;
 &lt;p&gt;Welcome to Day 7 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt;, and start at &lt;a href=&#34;https://tcc.lovebyte.party/day1&#34;&gt;Day 1&lt;/a&gt;! You can start whenever you like, there are no deadlines!&lt;/p&gt;
 &lt;p&gt;There is no challenge specific video today, instead we have a video filled with general sizecoding tips and tricks! The video will be available on Sunday at 9am GMT!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bCus9KXBk68&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 &lt;h1 id=&#34;the-challenge-mix-and-match&#34;&gt;The Challenge: Mix and Match!&lt;/h1&gt;
 &lt;p&gt;The &lt;strong&gt;first challenge&lt;/strong&gt; is to combine some of the techniques you have learned over the week into an effect! Playing around with mixing different effects is a great way to spark creativity! You could combine your Day 2 scene with a scroller to create an animated Christmas Card or go hard and great a xor-plasma-tunnel-scroller-christmas-tree!&lt;/p&gt;
 &lt;p&gt;Our Day 7 video above is about general sizecoding tips and tricks that may help you, but it&amp;rsquo;s not necessary so you can even start early!&lt;/p&gt;
@@ -546,7 +551,31 @@ There is no challenge specific video today, instead we have a video filled with 
     </item>
     
     <item>
-      <title>The Sixth Day of Tiny Code</title>
+      <title>The Seventh Day of Tiny Code Christmas Extra</title>
+      <link>https://tcc.lovebyte.party/day7extra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day7extra/</guid>
+      <description>Tiny Code Christmas - Day 7 - EXTRA Welcome to Day 7 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!
+If you haven’t already, read the overview to find out what Tiny Code Christmas is all about!
+The Challenge: Snowflake!</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-7---extra&#34;&gt;Tiny Code Christmas - Day 7 - EXTRA&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 7 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!&lt;/p&gt;
+&lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Cx2vyBVjMpg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;the-challenge-snowflake&#34;&gt;The Challenge: Snowflake!&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;first challenge&lt;/strong&gt; is to make a snowflake, the &lt;strong&gt;second challenge&lt;/strong&gt; is to make the smallest recognisable code that outputs a snowflake!&lt;/p&gt;
+&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>The Sixth Day of Tiny Code Christmas</title>
       <link>https://tcc.lovebyte.party/day6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -667,7 +696,7 @@ The Challenge: Rasterbars!</description>
     </item>
     
     <item>
-      <title>The Third Day of Tiny Code</title>
+      <title>The Third Day of Tiny Code Christmas</title>
       <link>https://tcc.lovebyte.party/day3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -698,7 +727,7 @@ Today we’re going to look at an essential technique that is used to code per-p
 &lt;p&gt;The &lt;strong&gt;second challenge&lt;/strong&gt; is to keep your effect at a maximum of &lt;strong&gt;128&lt;/strong&gt; characters! Half the amount we used on the previous challenges! On the PICO-8 this may be more difficult to do with a custom palette, so for this challenge you can choose not to include the palette in your character count.&lt;/p&gt;
 &lt;h2 id=&#34;the-expert-challenge&#34;&gt;The Expert Challenge!&lt;/h2&gt;
 &lt;p&gt;No expert challenge today, just get creative!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://tcc.lovebyte.party/day4expico.gif&#34; alt=&#34;Day 3 expert challenge completed in PICO-8 by Superogue&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tcc.lovebyte.party/day3expico.gif&#34; alt=&#34;Day 3 expert challenge completed in PICO-8 by Superogue&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
 &lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
 </content>
@@ -800,12 +829,12 @@ The Challenge: Connect the Dots!</description>
     </item>
     
     <item>
-      <title>Tiny Code Showcase</title>
+      <title>Tiny Code Christmas Showcase</title>
       <link>https://tcc.lovebyte.party/showcase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tcc.lovebyte.party/showcase/</guid>
-      <description>Tiny Code Christmas - Showcase This is an extended version of the Tiny Code Christmas New Years Eve Showcase, this should now include all of the #lovebytetcc entries that were posted to Mastodon! We&amp;rsquo;re working on more showcases so check back soon!
+      <description>Tiny Code Christmas - Showcase This is an extended version of the Tiny Code Christmas New Years Eve Showcase, this should now include all of the #lovebytetcc entries that were posted to Mastodon!
 Sharing is Caring! If you feel like it, why not share what you’ve done with us on the LoveByte Discord, #lovebyte on IRCnet, or share on Twitter and Mastodon using the hashtag #lovebytetcc</description>
       <content>&lt;h1 id=&#34;tiny-code-christmas---showcase&#34;&gt;Tiny Code Christmas - Showcase&lt;/h1&gt;
 
@@ -813,7 +842,7 @@ Sharing is Caring! If you feel like it, why not share what you’ve done with us
   &lt;iframe src=&#34;https://www.youtube.com/embed/Mz3hK4SQ6U0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This is an extended version of the Tiny Code Christmas New Years Eve Showcase, this should now include all of the #lovebytetcc entries that were posted to Mastodon! We&amp;rsquo;re working on more showcases so check back soon!&lt;/p&gt;
+&lt;p&gt;This is an extended version of the Tiny Code Christmas New Years Eve Showcase, this should now include all of the #lovebytetcc entries that were posted to Mastodon!&lt;/p&gt;
 &lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
 &lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
 </content>
