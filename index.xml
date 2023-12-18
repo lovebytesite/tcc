@@ -123,6 +123,130 @@ Check out this short explainer video:&lt;/p&gt;
     </item>
     
     <item>
+      <title>The Eight Day of Tiny Code</title>
+      <link>https://tcc.lovebyte.party/day8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day8/</guid>
+      <description>Tiny Code Christmas - Day 8 Welcome to Day 8 of Tiny Code Christmas! We have a full week of sizecoding in the rearview mirror and only 5 more days of Tiny Code Christmas! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today we’re going to look at a rotation combined with a pixel effect.</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-8&#34;&gt;Tiny Code Christmas - Day 8&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 8 of Tiny Code Christmas! We have a full week of sizecoding in the rearview mirror and only 5 more days of Tiny Code Christmas! If you’re just joining us don’t forget to check out the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt;, and start at &lt;a href=&#34;https://tcc.lovebyte.party/day1&#34;&gt;Day 1&lt;/a&gt;! You can start whenever you like, there are no deadlines!&lt;/p&gt;
+&lt;p&gt;Today we’re going to look at a rotation combined with a pixel effect. We can use cos and sin to get the x and y coordinates from an angle and use that to animate a rotating effect. I saw this effect put into practice by Aldroid at a &lt;a href=&#34;https://twitch.tv/fieldfxdemo/&#34;&gt;Field-FX bytejam&lt;/a&gt; a few weeks ago, it&amp;rsquo;s a great way to learn about rotation.&lt;/p&gt;
+&lt;p&gt;This is the TIC-80 palette code mentioned in the video, adapted from the &lt;a href=&#34;http://www.sizecoding.org/wiki/Byte_Battle&#34;&gt;Bytebattle page on sizecoding.org&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;47&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; poke(&lt;span style=&#34;color:#ae81ff&#34;&gt;16320&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;j,math.sin(j&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;math.sin(j&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;13.7&lt;/span&gt;))&lt;span style=&#34;color:#f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;256&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;the-challenge-round-and-round&#34;&gt;The Challenge: Round and Round!&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;first challenge&lt;/strong&gt; is to get an animated tentacle effect on the screen!
+Use a for loop to create multiple circles, rotate them and apply the pixel effect to create the tentacles!&lt;/p&gt;
+&lt;p&gt;You can check out our Day 8 video above for an overview on this type of effect.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://tcc.lovebyte.party/day8.gif&#34;  alt=&#34;An Example of the Day 8 Challenge completed with TIC-80&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;An Example of the Day 8 Challenge completed with TIC-80.&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;The &lt;strong&gt;second challenge&lt;/strong&gt; is to keep your effect at a maximum of 256 characters. Experiment with some of the palettes from the &lt;a href=&#34;http://www.sizecoding.org/wiki/Byte_Battle&#34;&gt;Bytebattle page on sizecoding.org&lt;/a&gt;!&lt;/p&gt;
+&lt;h1 id=&#34;the-expert-challenge&#34;&gt;The Expert Challenge&lt;/h1&gt;
+&lt;p&gt;These expert challenges will push your sizecoding knowledge to the limit! Don&amp;rsquo;t forget to check out our previous Expert Challenges!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a clockwise rotating filled triangle that spins around its (approximated) center&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t use the &amp;rsquo;tri&amp;rsquo; or &amp;rsquo;line&amp;rsquo; functions&lt;/li&gt;
+&lt;li&gt;Add a gradient background&lt;/li&gt;
+&lt;li&gt;TIC-80: 200 characters or less&lt;/li&gt;
+&lt;li&gt;PICO-8: 150 characters or less&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://tcc.lovebyte.party/day8extic.gif&#34;  alt=&#34;An Example of the Day 8 Challenge completed with TIC-80 by Superogue&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;An Example of the Day 8 Challenge completed with TIC-80 by Superogue&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>The Eight Day of Tiny Code Christmas Extra</title>
+      <link>https://tcc.lovebyte.party/day8extra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day8extra/</guid>
+      <description>Tiny Code Christmas - Day 8 - EXTRA Welcome to Day 8 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!
+If you haven’t already, read the overview to find out what Tiny Code Christmas is all about!
+The Challenge: Bubble Universe!</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-8---extra&#34;&gt;Tiny Code Christmas - Day 8 - EXTRA&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 8 of Tiny Code Christmas EXTRA! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!&lt;/p&gt;
+&lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yjzdaLGawRI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;the-challenge-bubble-universe&#34;&gt;The Challenge: Bubble Universe!&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/yuruyurau/status/1226846058728177665&#34;&gt;This tweet from 2020&lt;/a&gt; went around recently &lt;a href=&#34;https://www.youtube.com/watch?v=G5aOBh7qQe8&#34;&gt;via this video (which appears to give it the name Bubble Universe)&lt;/a&gt; and got ported to the &lt;a href=&#34;https://6t.vc/@luchak/111212342304510501&#34;&gt;PICO-8 by Luchak&lt;/a&gt;, and &lt;a href=&#34;https://mastodon.social/@jtruk/111212403390100039&#34;&gt;TIC-80 by jtruk&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://tcc.lovebyte.party/day8extra.gif&#34;  alt=&#34;Bubble Universe ported to TIC-80 by jtruk&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;Bubble Universe ported to TIC-80 by jtruk&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;The &lt;strong&gt;first challenge&lt;/strong&gt; is to explore the effect and the various parameters. The &lt;strong&gt;second challenge&lt;/strong&gt; is to create the tiniest implementation possible while retaining the magic of the original. Both the TIC-80 and PICO-8 port code are below as a starting point or you can port the original Processing.&lt;/p&gt;
+&lt;h2 id=&#34;tic-80&#34;&gt;TIC-80&lt;/h2&gt;
+&lt;p&gt;Courtesy of jtruk&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n,m,r&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;40&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;,math.pi&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;235&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;x,v,t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;S,C&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;math.sin,math.cos
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TIC&lt;/span&gt;()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  cls(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,n &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,m &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; a,b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;v,r&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;x
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; u&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;S(a)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;S(b)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      v&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;C(a)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;C(b)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      x&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;u&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      pix(&lt;span style=&#34;color:#ae81ff&#34;&gt;120&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;u&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;68&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;v&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;j&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  t&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;.025&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pico-8&#34;&gt;PICO-8&lt;/h2&gt;
+&lt;p&gt;Courtesy of Luchak&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; t,u,v&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;_set_fps(&lt;span style=&#34;color:#ae81ff&#34;&gt;60&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;::_::
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; v&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;22&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; j&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;142&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;local&lt;/span&gt; a,b&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;u&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;.1592&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;k,(i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;v)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;.1592&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;u,v&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;sin(b)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;sin(a),cos(b)&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;cos(a)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pset(u&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;,v&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;,i&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;j&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;\&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;36&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;u&lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt;t
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;.012&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;?&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;⁶1⁶c0⁶!5f100🐱2☉8🅾️웃웃99??::♥7&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;goto&lt;/span&gt; _
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>The Fifth Day of Tiny Code Christmas</title>
       <link>https://tcc.lovebyte.party/day5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
