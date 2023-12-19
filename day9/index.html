@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>The Ninth Day of Tiny Code :: Tiny Code Christmas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tiny Code Christmas - Day 9 Welcome to Day 9 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today we’re look at a classic shadebob effect. Combine some nice motion patterns with an additive drawing effect and master today&amp;rsquo;s challenge. For TIC-80 users we&amp;rsquo;ll also be taking a look at the poke function and how can use it to set our pixels and our palettes." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://tcc.lovebyte.party/day9/" />
+
+
+
+
+<link rel="stylesheet" href="https://tcc.lovebyte.party/assets/style.css">
+
+  <link rel="stylesheet" href="https://tcc.lovebyte.party/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://tcc.lovebyte.party/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://tcc.lovebyte.party/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Ninth Day of Tiny Code">
+<meta property="og:description" content="Tiny Code Christmas - Day 9 Welcome to Day 9 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today we’re look at a classic shadebob effect. Combine some nice motion patterns with an additive drawing effect and master today&amp;rsquo;s challenge. For TIC-80 users we&amp;rsquo;ll also be taking a look at the poke function and how can use it to set our pixels and our palettes." />
+<meta property="og:url" content="https://tcc.lovebyte.party/day9/" />
+<meta property="og:site_name" content="Tiny Code Christmas" />
+
+  
+    <meta property="og:image" content="https://tcc.lovebyte.party/img/favicon/red.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="red">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Tiny Code Christmas 2023
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">     Home</a></li>
+        
+      
+        
+          <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+        
+      
+        
+          <li><a href="/about"> About</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">     Home</a></li>
+      
+    
+      
+        <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+      
+    
+      
+        <li><a href="/about"> About</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://tcc.lovebyte.party/day9/">The Ninth Day of Tiny Code</a></h1>
+  <div class="post-meta">
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="tiny-code-christmas---day-9">Tiny Code Christmas - Day 9<a href="#tiny-code-christmas---day-9" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Welcome to Day 9 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the <a href="https://tcc.lovebyte.party/">overview</a>, and start at <a href="/day1">Day 1</a>! You can start whenever you like, there are no deadlines!</p>
+<p>Today we’re look at a classic shadebob effect. Combine some nice motion patterns with an additive drawing effect and master today&rsquo;s challenge. For TIC-80 users we&rsquo;ll also be taking a look at the poke function and how can use it to set our pixels and our palettes.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/eYH_ZErT1-0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><a href="https://liquidream.co.uk">Liquidream</a> has helpfully provided a PICO-8 palette that is suitable for gradient usage, compressed using 2DArray&rsquo;s &ldquo;Palette Maker&rdquo; to 25 chars:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">?</span><span style="color:#e6db74">&#34;⁶!5f100█2☉9:⌂⬅️⬇️1▒😐&lt;765&#34;</span>
+</span></span></code></pre></div><h1 id="the-challenge-shade-the-bob">The Challenge: Shade the Bob<a href="#the-challenge-shade-the-bob" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>The <strong>first challenge</strong> is to get an animated shadebob effect on the screen!
+Use sin and cos to create an animated shadebob, you&rsquo;ll have to do the additive bit yourself!</p>
+<p>You can check out our Day 9 video above for an overview on this type of effect.</p>
+
+  <figure class="center" >
+    <img src="/day9.gif"  alt="An Example of the Day 9 Challenge completed with TIC-80 by mantratronic"   style="border-radius: 8px;"  />
+    
+      <figcaption class="center" >An Example of the Day 9 Challenge completed with TIC-80 by mantratronic</figcaption>
+    
+  </figure>
+
+
+<p>The <strong>second challenge</strong> is to keep your effect at a maximum of 256 characters. For TIC-80 experiment with some of the palettes from the <a href="http://www.sizecoding.org/wiki/Byte_Battle">Bytebattle page on sizecoding.org</a>!</p>
+<h1 id="the-expert-challenge">The Expert Challenge<a href="#the-expert-challenge" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>These expert challenges will push your sizecoding knowledge to the limit! Don&rsquo;t forget to check out our previous Expert Challenges!</p>
+<ul>
+<li>Shadebob(s) with a minimal size of 32 pixels</li>
+<li>moving in varying circular/sine pattern</li>
+<li>128 character limit, the smaller the better!</li>
+</ul>
+
+  <figure class="center" >
+    <img src="/day9extic.gif"  alt="An Example of the Day 9 Challenge completed with TIC-80 by Superogue"   style="border-radius: 8px;"  />
+    
+      <figcaption class="center" >An Example of the Day 9 Challenge completed with TIC-80 by Superogue</figcaption>
+    
+  </figure>
+
+
+<h1 id="sharing-is-caring">Sharing is Caring!<a href="#sharing-is-caring" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>If you feel like it, why not share what you’ve done with us on the <a href="https://discord.gg/pUS5kCJTzp">LoveByte Discord</a>, #lovebyte on IRCnet, or share on <a href="https://mobile.twitter.com/lovebyteparty">Twitter</a> and <a href="https://graphics.social/@lovebyteparty">Mastodon</a> using the hashtag #lovebytetcc</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://tcc.lovebyte.party/assets/main.js"></script>
+<script src="https://tcc.lovebyte.party/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
