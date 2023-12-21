@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>The Eleventh Day of Tiny Code :: Tiny Code Christmas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tiny Code Christmas - Day 11 Welcome to Day 11 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today we are going to enter the third dimension and build a voxel cube! Optionally, there is sample code under the challenge section to accompany this that you can use." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://tcc.lovebyte.party/day11/" />
+
+
+
+
+<link rel="stylesheet" href="https://tcc.lovebyte.party/assets/style.css">
+
+  <link rel="stylesheet" href="https://tcc.lovebyte.party/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://tcc.lovebyte.party/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://tcc.lovebyte.party/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Eleventh Day of Tiny Code">
+<meta property="og:description" content="Tiny Code Christmas - Day 11 Welcome to Day 11 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today we are going to enter the third dimension and build a voxel cube! Optionally, there is sample code under the challenge section to accompany this that you can use." />
+<meta property="og:url" content="https://tcc.lovebyte.party/day11/" />
+<meta property="og:site_name" content="Tiny Code Christmas" />
+
+  
+    <meta property="og:image" content="https://tcc.lovebyte.party/img/favicon/red.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="red">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Tiny Code Christmas 2023
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">     Home</a></li>
+        
+      
+        
+          <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+        
+      
+        
+          <li><a href="/about"> About</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">     Home</a></li>
+      
+    
+      
+        <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+      
+    
+      
+        <li><a href="/about"> About</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://tcc.lovebyte.party/day11/">The Eleventh Day of Tiny Code</a></h1>
+  <div class="post-meta">
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="tiny-code-christmas---day-11">Tiny Code Christmas - Day 11<a href="#tiny-code-christmas---day-11" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Welcome to Day 11 of Tiny Code Christmas! If you’re just joining us don’t forget to check out the <a href="https://tcc.lovebyte.party/">overview</a>, and start at <a href="/day1">Day 1</a>! You can start whenever you like, there are no deadlines!</p>
+<p>Today we are going to enter the third dimension and build a voxel cube! Optionally, there is sample code under the challenge section to accompany this that you can use.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/K68NwsLGAPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>If you&rsquo;re following along on PICO-8, you will need the full version to meet some of the size challenges today.</p>
+<h1 id="the-challenge-the-third-dimension">The Challenge: The Third Dimension<a href="#the-challenge-the-third-dimension" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>The <strong>first challenge</strong> is to create a voxel cube that rotates around two axes, the voxel cube must have an additional effect incorporated. This can be an effect like coloring the voxels or it can be a movement effect.</p>
+<p>You can check out our Day 11 video above for an overview on this structure, the code mentioned in the video is below.</p>
+
+  <figure class="center" >
+    <img src="/day11.gif"  alt="An Example of the Day 11 Challenge completed with TIC-80"   style="border-radius: 8px;"  />
+    
+      <figcaption class="center" >An Example of the Day 11 Challenge completed with TIC-80</figcaption>
+    
+  </figure>
+
+
+<p>The <strong>second challenge</strong> is to keep your effect at a maximum of 256 <strong>BYTES</strong>! We are on to the compressed file formats now so lets see how many extra bytes we can squeeze in!</p>
+<h1 id="the-expert-challenge">The Expert Challenge<a href="#the-expert-challenge" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>These expert challenges will push your sizecoding knowledge to the limit! Don&rsquo;t forget to check out our previous Expert Challenges!</p>
+<ul>
+<li>A hollow cube</li>
+<li>256 characters</li>
+<li>No line or triangle functions</li>
+</ul>
+<h1 id="sample-code-for-tic-80">Sample Code for TIC-80<a href="#sample-code-for-tic-80" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>sin<span style="color:#f92672">=</span>math.sin
+</span></span><span style="display:flex;"><span>cos<span style="color:#f92672">=</span>math.cos
+</span></span><span style="display:flex;"><span>angle<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">rotatey</span>(p,angle)
+</span></span><span style="display:flex;"><span> xt <span style="color:#f92672">=</span> p.x<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">-</span> p.z<span style="color:#f92672">*</span>sin(angle)
+</span></span><span style="display:flex;"><span> yt <span style="color:#f92672">=</span> p.y
+</span></span><span style="display:flex;"><span> zt <span style="color:#f92672">=</span> p.x<span style="color:#f92672">*</span>sin(angle) <span style="color:#f92672">+</span> p.z<span style="color:#f92672">*</span>cos(angle)
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> {x<span style="color:#f92672">=</span>xt,y<span style="color:#f92672">=</span>yt,z<span style="color:#f92672">=</span>zt}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">rotatex</span>(p,angle)
+</span></span><span style="display:flex;"><span> xt <span style="color:#f92672">=</span> p.x
+</span></span><span style="display:flex;"><span> yt <span style="color:#f92672">=</span> p.y<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">-</span> p.z<span style="color:#f92672">*</span>sin(angle)
+</span></span><span style="display:flex;"><span> zt <span style="color:#f92672">=</span> p.y<span style="color:#f92672">*</span>sin(angle) <span style="color:#f92672">+</span> p.z<span style="color:#f92672">*</span>cos(angle)
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> {x<span style="color:#f92672">=</span>xt,y<span style="color:#f92672">=</span>yt,z<span style="color:#f92672">=</span>zt}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">rotatez</span>(p,angle)
+</span></span><span style="display:flex;"><span> xt <span style="color:#f92672">=</span> p.x<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">-</span> p.y<span style="color:#f92672">*</span>sin(angle)
+</span></span><span style="display:flex;"><span> yt <span style="color:#f92672">=</span> p.x<span style="color:#f92672">*</span>sin(angle) <span style="color:#f92672">+</span> p.y<span style="color:#f92672">*</span>cos(angle)
+</span></span><span style="display:flex;"><span> zt <span style="color:#f92672">=</span> p.z
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> {x<span style="color:#f92672">=</span>xt,y<span style="color:#f92672">=</span>yt,z<span style="color:#f92672">=</span>zt}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">TIC</span>() 
+</span></span><span style="display:flex;"><span> cls()
+</span></span><span style="display:flex;"><span> t<span style="color:#f92672">=</span>time()<span style="color:#f92672">/</span><span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span> points <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span> angle<span style="color:#f92672">=</span>angle<span style="color:#f92672">+</span><span style="color:#ae81ff">.01</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> x<span style="color:#f92672">=-</span><span style="color:#ae81ff">25</span>,<span style="color:#ae81ff">25</span>,<span style="color:#ae81ff">6</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> y<span style="color:#f92672">=-</span><span style="color:#ae81ff">25</span>,<span style="color:#ae81ff">25</span>,<span style="color:#ae81ff">6</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> z<span style="color:#f92672">=-</span><span style="color:#ae81ff">25</span>,<span style="color:#ae81ff">25</span>,<span style="color:#ae81ff">6</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> p<span style="color:#f92672">=</span>rotatez({x<span style="color:#f92672">=</span>x,y<span style="color:#f92672">=</span>y,z<span style="color:#f92672">=</span>z},angle)
+</span></span><span style="display:flex;"><span> q<span style="color:#f92672">=</span>rotatex(p,angle)
+</span></span><span style="display:flex;"><span> r<span style="color:#f92672">=</span>rotatey(q,angle)  
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   table.insert(points,
+</span></span><span style="display:flex;"><span>        {x<span style="color:#f92672">=</span>r.x,y<span style="color:#f92672">=</span>r.y,z<span style="color:#f92672">=</span>r.z<span style="color:#f92672">+</span><span style="color:#ae81ff">400</span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> table.sort(points,
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">function</span> (a,b) <span style="color:#66d9ef">return</span> a.z<span style="color:#f92672">&gt;</span>b.z <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>   )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,<span style="color:#f92672">#</span>points <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> j<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">2</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  circ(<span style="color:#ae81ff">120</span><span style="color:#f92672">+</span><span style="color:#ae81ff">600</span><span style="color:#f92672">*</span>points[i].x<span style="color:#f92672">/</span>points[i].z<span style="color:#f92672">-</span>j<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">68</span><span style="color:#f92672">+</span><span style="color:#ae81ff">600</span><span style="color:#f92672">*</span>points[i].y<span style="color:#f92672">/</span>points[i].z<span style="color:#f92672">-</span>j<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">3</span><span style="color:#f92672">-</span>j,
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">14</span><span style="color:#f92672">-</span>j);
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h1 id="sample-code-for-pico-8">Sample Code for PICO-8<a href="#sample-code-for-pico-8" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>angle<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">rotatey</span>(p,angle)
+</span></span><span style="display:flex;"><span> xt <span style="color:#f92672">=</span> p.x<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">-</span> p.z<span style="color:#f92672">*</span>sin(angle)
+</span></span><span style="display:flex;"><span> yt <span style="color:#f92672">=</span> p.y
+</span></span><span style="display:flex;"><span> zt <span style="color:#f92672">=</span> p.x<span style="color:#f92672">*</span>sin(angle) <span style="color:#f92672">+</span> p.z<span style="color:#f92672">*</span>cos(angle)
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> {x<span style="color:#f92672">=</span>xt,y<span style="color:#f92672">=</span>yt,z<span style="color:#f92672">=</span>zt}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">rotatex</span>(p,angle)
+</span></span><span style="display:flex;"><span> xt <span style="color:#f92672">=</span> p.x
+</span></span><span style="display:flex;"><span> yt <span style="color:#f92672">=</span> p.y<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">-</span> p.z<span style="color:#f92672">*</span>sin(angle)
+</span></span><span style="display:flex;"><span> zt <span style="color:#f92672">=</span> p.y<span style="color:#f92672">*</span>sin(angle) <span style="color:#f92672">+</span> p.z<span style="color:#f92672">*</span>cos(angle)
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> {x<span style="color:#f92672">=</span>xt,y<span style="color:#f92672">=</span>yt,z<span style="color:#f92672">=</span>zt}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">rotatez</span>(p,angle)
+</span></span><span style="display:flex;"><span> xt <span style="color:#f92672">=</span> p.x<span style="color:#f92672">*</span>cos(angle) <span style="color:#f92672">-</span> p.y<span style="color:#f92672">*</span>sin(angle)
+</span></span><span style="display:flex;"><span> yt <span style="color:#f92672">=</span> p.x<span style="color:#f92672">*</span>sin(angle) <span style="color:#f92672">+</span> p.y<span style="color:#f92672">*</span>cos(angle)
+</span></span><span style="display:flex;"><span> zt <span style="color:#f92672">=</span> p.z
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">return</span> {x<span style="color:#f92672">=</span>xt,y<span style="color:#f92672">=</span>yt,z<span style="color:#f92672">=</span>zt}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">zsort</span>(points)
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,<span style="color:#f92672">#</span>points <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">local</span> j <span style="color:#f92672">=</span> i
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">while</span> j <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">and</span> points[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>].z<span style="color:#f92672">&lt;</span>points[j].z <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>   points[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>],points[j] <span style="color:#f92672">=</span> points[j],points[j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>   j <span style="color:#f92672">=</span> j<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">_draw</span>() 
+</span></span><span style="display:flex;"><span> cls()
+</span></span><span style="display:flex;"><span> t<span style="color:#f92672">=</span>time()
+</span></span><span style="display:flex;"><span> points <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span> angle<span style="color:#f92672">=</span>angle<span style="color:#f92672">+</span><span style="color:#ae81ff">.01</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> x<span style="color:#f92672">=-</span><span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">6</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> y<span style="color:#f92672">=-</span><span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">6</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> z<span style="color:#f92672">=-</span><span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">6</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> p<span style="color:#f92672">=</span>rotatez({x<span style="color:#f92672">=</span>x,y<span style="color:#f92672">=</span>y,z<span style="color:#f92672">=</span>z},angle)
+</span></span><span style="display:flex;"><span> q<span style="color:#f92672">=</span>rotatex(p,angle)
+</span></span><span style="display:flex;"><span> r<span style="color:#f92672">=</span>rotatey(q,angle)  
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span> add(points,
+</span></span><span style="display:flex;"><span>      {x<span style="color:#f92672">=</span>r.x,y<span style="color:#f92672">=</span>r.y,z<span style="color:#f92672">=</span>r.z<span style="color:#f92672">+</span><span style="color:#ae81ff">400</span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span> zsort(points)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,<span style="color:#f92672">#</span>points <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">for</span> j<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">2</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>  circfill(<span style="color:#ae81ff">64</span><span style="color:#f92672">+</span><span style="color:#ae81ff">600</span><span style="color:#f92672">*</span>points[i].x<span style="color:#f92672">/</span>points[i].z<span style="color:#f92672">-</span>j<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">64</span><span style="color:#f92672">+</span><span style="color:#ae81ff">600</span><span style="color:#f92672">*</span>points[i].y<span style="color:#f92672">/</span>points[i].z<span style="color:#f92672">-</span>j<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">3</span><span style="color:#f92672">-</span>j,
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">13</span><span style="color:#f92672">-</span>j);
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><h1 id="sharing-is-caring">Sharing is Caring!<a href="#sharing-is-caring" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>If you feel like it, why not share what you’ve done with us on the <a href="https://discord.gg/pUS5kCJTzp">LoveByte Discord</a>, #lovebyte on IRCnet, or share on <a href="https://mobile.twitter.com/lovebyteparty">Twitter</a> and <a href="https://graphics.social/@lovebyteparty">Mastodon</a> using the hashtag #lovebytetcc</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://tcc.lovebyte.party/assets/main.js"></script>
+<script src="https://tcc.lovebyte.party/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
