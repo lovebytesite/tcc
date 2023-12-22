@@ -1358,6 +1358,69 @@ The Challenge: Connect the Dots!</description>
     </item>
     
     <item>
+      <title>The Twelfth Day of Tiny Code</title>
+      <link>https://tcc.lovebyte.party/day12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day12/</guid>
+      <description>Tiny Code Christmas - Day 12 Welcome to Day 12, the final day of Tiny Code Christmas! Thanks you all so much for taking part. Please keep in touch! If you’re just joining us don’t forget to check out the overview, and start at Day 1! You can start whenever you like, there are no deadlines!
+Today&amp;rsquo;s challenge is to build a voxel christmas tree with as much extra stuff crammed in as possible, but if you can also just build an awesome Christmas scene using some of the effects and techniques you&amp;rsquo;ve learned over the last 12 days!</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-12&#34;&gt;Tiny Code Christmas - Day 12&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 12, the final day of Tiny Code Christmas! Thanks you all so much for taking part. Please keep in touch! If you’re just joining us don’t forget to check out the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt;, and start at &lt;a href=&#34;https://tcc.lovebyte.party/day1&#34;&gt;Day 1&lt;/a&gt;! You can start whenever you like, there are no deadlines!&lt;/p&gt;
+&lt;p&gt;Today&amp;rsquo;s challenge is to build a voxel christmas tree with as much extra stuff crammed in as possible, but if you can also just build an awesome Christmas scene using some of the effects and techniques you&amp;rsquo;ve learned over the last 12 days!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/MXMN1Q2z-MI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you&amp;rsquo;re following along on PICO-8, you will need the full version to meet some of the size challenges today.&lt;/p&gt;
+&lt;h1 id=&#34;the-challenge-rockin-around-the-christmas-tree&#34;&gt;The Challenge: Rockin&amp;rsquo; around the Christmas Tree!&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;first challenge&lt;/strong&gt; is to create a voxel christmas tree that rotates around the y-axis, What other effects can you add? Landscape? Snow?&lt;/p&gt;
+&lt;p&gt;You can check out our Day 11 video above for an overview of the challenge, but there&amp;rsquo;s no code samples today! If you&amp;rsquo;ve made it this far, you possess the knowledge within you!&lt;/p&gt;
+
+  &lt;figure class=&#34;center&#34; &gt;
+    &lt;img src=&#34;https://tcc.lovebyte.party/day12.gif&#34;  alt=&#34;An Example of a Day 12 Christmas Tree with plenty of room for additions!&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
+    
+      &lt;figcaption class=&#34;center&#34; &gt;An Example of a Day 12 Christmas Tree with plenty of room for additions!&lt;/figcaption&gt;
+    
+  &lt;/figure&gt;
+
+
+&lt;p&gt;The &lt;strong&gt;second challenge&lt;/strong&gt; is to keep your effect at a maximum of 256 &lt;strong&gt;BYTES&lt;/strong&gt;! We are on to the compressed file formats now so lets see how many extra bytes we can squeeze in!&lt;/p&gt;
+&lt;h1 id=&#34;the-expert-challenge&#34;&gt;The Expert Challenge&lt;/h1&gt;
+&lt;p&gt;These expert challenges will push your sizecoding knowledge to the limit! Don&amp;rsquo;t forget to check out our previous Expert Challenges!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We&amp;rsquo;re cooking something up, check back shortly or check the discord!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>The Twelfth Day of Tiny Code Christmas Extra</title>
+      <link>https://tcc.lovebyte.party/day12extra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tcc.lovebyte.party/day12extra/</guid>
+      <description>Tiny Code Christmas - Day 12 - EXTRA Welcome to Day 12 of Tiny Code Christmas EXTRA! We made it to the last day! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!
+If you haven’t already, read the overview to find out what Tiny Code Christmas is all about!</description>
+      <content>&lt;h1 id=&#34;tiny-code-christmas---day-12---extra&#34;&gt;Tiny Code Christmas - Day 12 - EXTRA&lt;/h1&gt;
+&lt;p&gt;Welcome to Day 12 of Tiny Code Christmas EXTRA! We made it to the last day! We’re glad that you’re joining us again on this festive journey into the world of sizecoding. TCC Extra is intended for people who completed Tiny Code Christmas last year and want a new challenge!&lt;/p&gt;
+&lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/y3Azbzq0xXM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;the-challenge-3d-candy-cane&#34;&gt;The Challenge: 3D Candy Cane!&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;first challenge&lt;/strong&gt; is to create a 3D candycane, rotating on 2 axes colored red and white! The &lt;strong&gt;second challenge&lt;/strong&gt; is to make it as small as possible.&lt;/p&gt;
+&lt;h1 id=&#34;sharing-is-caring&#34;&gt;Sharing is Caring!&lt;/h1&gt;
+&lt;p&gt;If you feel like it, why not share what you’ve done with us on the &lt;a href=&#34;https://discord.gg/pUS5kCJTzp&#34;&gt;LoveByte Discord&lt;/a&gt;, #lovebyte on IRCnet, or share on &lt;a href=&#34;https://mobile.twitter.com/lovebyteparty&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://graphics.social/@lovebyteparty&#34;&gt;Mastodon&lt;/a&gt; using the hashtag #lovebytetcc&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
       <title>Tiny Code Christmas Showcase</title>
       <link>https://tcc.lovebyte.party/showcase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
