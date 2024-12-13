@@ -26,10 +26,10 @@ Join the LoveByte Discord, chat with us on #lovebyte on IRCnet, follow LoveByte 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tcc.lovebyte.party/day0/</guid>
-      <description>Tiny Code Christmas - Day 0 Tiny Code Christmas starts tomorrow, Monday 9th of December 2024 and runs for 12 days! We&amp;rsquo;ve put together this little guide so that you&amp;rsquo;re ready to roll on Day 1!
+      <description>Tiny Code Christmas - Day 0 Tiny Code Christmas starts tomorrow, Monday 11th of December 2023 and runs for 12 days! We&amp;rsquo;ve put together this little guide so that you&amp;rsquo;re ready to roll on Day 1!
 A Tiny Code Christmas animation coded with TIC-80! Tiny Code Christmas is a non-competitive event to help you take your first steps in demoscene sizecoding with Lua based fantasy consoles like TIC-80 and PICO-8! There will be a chance to showcase your work at the end!</description>
       <content>&lt;h1 id=&#34;tiny-code-christmas---day-0&#34;&gt;Tiny Code Christmas - Day 0&lt;/h1&gt;
-&lt;p&gt;Tiny Code Christmas starts tomorrow, &lt;strong&gt;Monday 9th of December 2024&lt;/strong&gt; and runs for 12 days! We&amp;rsquo;ve put together this little guide so that you&amp;rsquo;re ready to roll on Day 1!&lt;/p&gt;
+&lt;p&gt;Tiny Code Christmas starts tomorrow, &lt;strong&gt;Monday 11th of December 2023&lt;/strong&gt; and runs for 12 days! We&amp;rsquo;ve put together this little guide so that you&amp;rsquo;re ready to roll on Day 1!&lt;/p&gt;
 
   &lt;figure class=&#34;center&#34; &gt;
     &lt;img src=&#34;https://tcc.lovebyte.party/tcclogo.gif&#34;  alt=&#34;A Tiny Code Christmas animation coded with TIC-80&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
@@ -560,7 +560,7 @@ We have designed these challenges so that they can be completed by both new and 
 &lt;p&gt;Welcome to Day 1 of Tiny Code Christmas! We’re glad that you’re joining us on this festive journey into the world of sizecoding. If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/FES0J1vbgGY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ys4N6itxi44&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;We have designed these challenges so that they can be completed by both new and experienced coders, take the challenges at your own pace, there’s no limits and no competition but there will be an opportunity at the end to showcase your creations to a wider audience!&lt;/p&gt;
@@ -610,7 +610,7 @@ If you’re reading this on the 11th, check out the Field-FX Monday Night Bytes 
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/g10WE2DlQAs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/UlVpzTmtLhg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;If you’re reading this on the 11th, check out the &lt;a href=&#34;https://www.twitch.tv/fieldfxdemo&#34;&gt;Field-FX Monday Night Bytes twitch stream&lt;/a&gt; at 9pm GMT, you can watch 4 sizecoders program TIC-80 along to an awesome soundtrack! It’s a non-competitive jam and the size limits aren’t enforced but it should give you a good idea of the possibilities of what you can achieve!&lt;/p&gt;
@@ -858,7 +858,7 @@ Today we’re going to look at time, an essential component in all of the effect
 &lt;p&gt;Today we’re going to look at time, an essential component in all of the effects we will be making from now on. Yesterday our scene was fairly static, we put some shapes on the screen to make a scene, but with a little bit of time we can add animation to our scene.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/w0RwS9UEKTk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/KE19iH-NzEc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;the-challenge-snow-time-like-the-present&#34;&gt;The Challenge: Snow time() Like The Present!&lt;/h1&gt;
@@ -905,7 +905,7 @@ The Challenge: Enter the Metaverse!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/soevVDyK8tM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/TRYek_ci5QI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-enter-the-metaverse&#34;&gt;The Challenge: Enter the Metaverse!&lt;/h2&gt;
