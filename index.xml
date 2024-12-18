@@ -26,10 +26,10 @@ Join the LoveByte Discord, chat with us on #lovebyte on IRCnet, follow LoveByte 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tcc.lovebyte.party/day0/</guid>
-      <description>Tiny Code Christmas - Day 0 Tiny Code Christmas starts tomorrow, Monday 11th of December 2023 and runs for 12 days! We&amp;rsquo;ve put together this little guide so that you&amp;rsquo;re ready to roll on Day 1!
+      <description>Tiny Code Christmas - Day 0 Tiny Code Christmas starts tomorrow, Monday 9th of December 2024 and runs for 12 days! We&amp;rsquo;ve put together this little guide so that you&amp;rsquo;re ready to roll on Day 1!
 A Tiny Code Christmas animation coded with TIC-80! Tiny Code Christmas is a non-competitive event to help you take your first steps in demoscene sizecoding with Lua based fantasy consoles like TIC-80 and PICO-8! There will be a chance to showcase your work at the end!</description>
       <content>&lt;h1 id=&#34;tiny-code-christmas---day-0&#34;&gt;Tiny Code Christmas - Day 0&lt;/h1&gt;
-&lt;p&gt;Tiny Code Christmas starts tomorrow, &lt;strong&gt;Monday 11th of December 2023&lt;/strong&gt; and runs for 12 days! We&amp;rsquo;ve put together this little guide so that you&amp;rsquo;re ready to roll on Day 1!&lt;/p&gt;
+&lt;p&gt;Tiny Code Christmas starts tomorrow, &lt;strong&gt;Monday 9th of December 2024&lt;/strong&gt; and runs for 12 days! We&amp;rsquo;ve put together this little guide so that you&amp;rsquo;re ready to roll on Day 1!&lt;/p&gt;
 
   &lt;figure class=&#34;center&#34; &gt;
     &lt;img src=&#34;https://tcc.lovebyte.party/tcclogo.gif&#34;  alt=&#34;A Tiny Code Christmas animation coded with TIC-80&#34;   style=&#34;border-radius: 8px;&#34;  /&gt;
@@ -135,7 +135,7 @@ Today we’re going to look at a rotation combined with a pixel effect.</descrip
 &lt;p&gt;Today we’re going to look at a rotation combined with a pixel effect. We can use cos and sin to get the x and y coordinates from an angle and use that to animate a rotating effect. I saw this effect put into practice by Aldroid at a &lt;a href=&#34;https://twitch.tv/fieldfxdemo/&#34;&gt;Field-FX bytejam&lt;/a&gt; a few weeks ago, it&amp;rsquo;s a great way to learn about rotation.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Xvtpi0HJ44A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GHFgirqXHSg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;This is the TIC-80 palette code mentioned in the video, adapted from the &lt;a href=&#34;http://www.sizecoding.org/wiki/Byte_Battle&#34;&gt;Bytebattle page on sizecoding.org&lt;/a&gt;:&lt;/p&gt;
@@ -193,7 +193,7 @@ The Challenge: Bubble Universe!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/yjzdaLGawRI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SI8o6kpHglQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-bubble-universe&#34;&gt;The Challenge: Bubble Universe!&lt;/h2&gt;
@@ -466,7 +466,7 @@ Today we’re going to look at our second demoscene effect: tunnels. A tunnel ef
 &lt;p&gt;Today we’re going to look at our second demoscene effect: tunnels. A tunnel effect is created using polar coordinates combined with a time value to animate it. We&amp;rsquo;ll be taking a look at the atan2 function and using it to create our tunnel. Tune in tomorrow to find out how to make a sine scroller!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/kkTebg0gNNU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fdFKz6pkNbQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;the-challenge-polar-express&#34;&gt;The Challenge: Polar Express!&lt;/h1&gt;
@@ -512,7 +512,7 @@ The Challenge: Flyover!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/83CifrvXw1c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/bR3hwEqCps8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-flyover&#34;&gt;The Challenge: Flyover!&lt;/h2&gt;
@@ -560,7 +560,7 @@ We have designed these challenges so that they can be completed by both new and 
 &lt;p&gt;Welcome to Day 1 of Tiny Code Christmas! We’re glad that you’re joining us on this festive journey into the world of sizecoding. If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ys4N6itxi44&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FES0J1vbgGY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;We have designed these challenges so that they can be completed by both new and experienced coders, take the challenges at your own pace, there’s no limits and no competition but there will be an opportunity at the end to showcase your creations to a wider audience!&lt;/p&gt;
@@ -610,7 +610,7 @@ If you’re reading this on the 11th, check out the Field-FX Monday Night Bytes 
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/UlVpzTmtLhg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/g10WE2DlQAs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;If you’re reading this on the 11th, check out the &lt;a href=&#34;https://www.twitch.tv/fieldfxdemo&#34;&gt;Field-FX Monday Night Bytes twitch stream&lt;/a&gt; at 9pm GMT, you can watch 4 sizecoders program TIC-80 along to an awesome soundtrack! It’s a non-competitive jam and the size limits aren’t enforced but it should give you a good idea of the possibilities of what you can achieve!&lt;/p&gt;
@@ -636,7 +636,7 @@ Today we’re going to look at our first demoscene effect: plasma. A Plasma effe
 &lt;p&gt;Today we’re going to look at our first demoscene effect: plasma. A Plasma effect is created by changing the pixel color based on the sin values of its position and combined with a time value to animate it. If sin and cos trigger any bad memories, don’t worry they’re your best friends here! Tune in tomorrow to find out how to make a tunnel effect.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/263vUVFX3F8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ULLjrB4oJ7E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;the-challenge-sines-of-the-times&#34;&gt;The Challenge: Sines of the times!&lt;/h1&gt;
@@ -682,7 +682,7 @@ The Challenge: Roto!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/wmLopAucxQM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3Ykyk6eZH2M&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-roto&#34;&gt;The Challenge: Roto!&lt;/h2&gt;
@@ -740,7 +740,7 @@ Today we’re look at a classic shadebob effect. Combine some nice motion patter
 &lt;p&gt;Today we’re look at a classic shadebob effect. Combine some nice motion patterns with an additive drawing effect and master today&amp;rsquo;s challenge. For TIC-80 users we&amp;rsquo;ll also be taking a look at the poke function and how can use it to set our pixels and our palettes.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/eYH_ZErT1-0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/YEk8StcOPVg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://liquidream.co.uk&#34;&gt;Liquidream&lt;/a&gt; has helpfully provided a PICO-8 palette that is suitable for gradient usage, compressed using 2DArray&amp;rsquo;s &amp;ldquo;Palette Maker&amp;rdquo; to 25 chars:&lt;/p&gt;
@@ -794,7 +794,7 @@ The Challenge: 3D Dot Landscape!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/YqtcC9NX6_o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ajOXaH8lY4A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-3d-dot-landscape&#34;&gt;The Challenge: 3D Dot Landscape!&lt;/h2&gt;
@@ -858,7 +858,7 @@ Today we’re going to look at time, an essential component in all of the effect
 &lt;p&gt;Today we’re going to look at time, an essential component in all of the effects we will be making from now on. Yesterday our scene was fairly static, we put some shapes on the screen to make a scene, but with a little bit of time we can add animation to our scene.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/KE19iH-NzEc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/w0RwS9UEKTk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;the-challenge-snow-time-like-the-present&#34;&gt;The Challenge: Snow time() Like The Present!&lt;/h1&gt;
@@ -905,7 +905,7 @@ The Challenge: Enter the Metaverse!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/TRYek_ci5QI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/soevVDyK8tM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-enter-the-metaverse&#34;&gt;The Challenge: Enter the Metaverse!&lt;/h2&gt;
@@ -983,7 +983,7 @@ There is no challenge specific video today, instead we have a video filled with 
 &lt;p&gt;There is no challenge specific video today, instead we have a video filled with general sizecoding tips and tricks! The video will be available on Sunday at 9am GMT!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/bCus9KXBk68&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/5otOsuJIuOw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;the-challenge-mix-and-match&#34;&gt;The Challenge: Mix and Match!&lt;/h1&gt;
@@ -1011,7 +1011,7 @@ The Challenge: Snowflake!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Cx2vyBVjMpg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/M07lOvW2V2g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-snowflake&#34;&gt;The Challenge: Snowflake!&lt;/h2&gt;
@@ -1035,7 +1035,7 @@ Today we’re going to look at a classic demoscene effect: the sine scroller. A 
 &lt;p&gt;&lt;strong&gt;Since it&amp;rsquo;s the weekend and you might want to get in a bit more programming, we&amp;rsquo;ve also opened up the &lt;a href=&#34;https://tcc.lovebyte.party/day7&#34;&gt;Day 7 challenge&lt;/a&gt;, the video  on Sunday is a general video on sizecoding tips and will release as normal at 9am GMT but you don&amp;rsquo;t need it for the challenge.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/qUOlRYzs4_s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/XORZ4oAM7PU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;the-challenge-hello-demoscene&#34;&gt;The Challenge: Hello, Demoscene!&lt;/h1&gt;
@@ -1089,7 +1089,7 @@ The Challenge: Rasterbars!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Y9Lpv2Zw210&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/7gWg392ZlGw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-rasterbars&#34;&gt;The Challenge: Rasterbars!&lt;/h2&gt;
@@ -1155,7 +1155,7 @@ Today we are going to take a look at building multiple effect stages in to a sin
 &lt;p&gt;Today we are going to take a look at building multiple effect stages in to a single demo! We will take two approaches: how to structure our code, and how to compress our code now that we need to fit in multiple effects. We will be taking a look at file-size based sizecoding techniques and exploring the world of compression.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/qmmgEJOVg_s&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ct2dOTkBY9A&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;If you&amp;rsquo;re following along on PICO-8, you will need the full version to use some of the features outlined today, but you can still take part in the first challenge if you don&amp;rsquo;t have it.&lt;/p&gt;
@@ -1205,7 +1205,7 @@ The Challenge: Let it Grow!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/I993ILH_v0w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/klwVF1tY4cM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-let-it-grow&#34;&gt;The Challenge: Let it Grow!&lt;/h2&gt;
@@ -1237,7 +1237,7 @@ Today we’re going to look at an essential technique that is used to code per-p
 &lt;p&gt;Today we’re going to look at an essential technique that is used to code per-pixel effects, instead of using shapes or &lt;strong&gt;cls()&lt;/strong&gt; we are going to manipulate the screen by changing the color of individual pixels! This is the basis of future effects and can be combined with shapes to good effect!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/IPMDLlxB6Lw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6Igzh_FRZ_k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&#34;the-challenge-little-by-little&#34;&gt;The Challenge: Little by Little!&lt;/h1&gt;
@@ -1276,7 +1276,7 @@ The Challenge: Connect the Dots!</description>
 &lt;p&gt;If you haven’t already, read the &lt;a href=&#34;https://tcc.lovebyte.party/&#34;&gt;overview&lt;/a&gt; to find out what Tiny Code Christmas is all about!&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/EtGApDC62FI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3v9nXjUxKhc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;the-challenge-connect-the-dots&#34;&gt;The Challenge: Connect the Dots!&lt;/h2&gt;
