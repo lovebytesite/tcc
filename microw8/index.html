@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Tiny Code Christmas in MicroW8 :: Tiny Code Christmas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="If you&amp;rsquo;ve already completed Tiny Code Christmas with either TIC-80 or PICO-8 and you&amp;rsquo;re not quite sure where to go from here, Superogue has kindly ported the challenges to MicroW8! MicroW8 is a web assembly based fantasy console designed specifically for sizecoding with an optional language CurlyWAS that makes web assembly a little easier to deal with.
+Check out this tiny intro for the MicroW8 by exoticorn, the creator of MicroW8: And this even tinier one by Superogue: Getting started Unlike TIC-80 and PICO-8, MicroW8 doesn&amp;rsquo;t have its own built in editor, so you can use the text editor of your choosing, and run MicroW8 from the command line, downloads are available on the MicroW8 site." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://tcc.lovebyte.party/microw8/" />
+
+
+
+
+<link rel="stylesheet" href="https://tcc.lovebyte.party/assets/style.css">
+
+  <link rel="stylesheet" href="https://tcc.lovebyte.party/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://tcc.lovebyte.party/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://tcc.lovebyte.party/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Tiny Code Christmas in MicroW8">
+<meta property="og:description" content="If you&amp;rsquo;ve already completed Tiny Code Christmas with either TIC-80 or PICO-8 and you&amp;rsquo;re not quite sure where to go from here, Superogue has kindly ported the challenges to MicroW8! MicroW8 is a web assembly based fantasy console designed specifically for sizecoding with an optional language CurlyWAS that makes web assembly a little easier to deal with.
+Check out this tiny intro for the MicroW8 by exoticorn, the creator of MicroW8: And this even tinier one by Superogue: Getting started Unlike TIC-80 and PICO-8, MicroW8 doesn&amp;rsquo;t have its own built in editor, so you can use the text editor of your choosing, and run MicroW8 from the command line, downloads are available on the MicroW8 site." />
+<meta property="og:url" content="https://tcc.lovebyte.party/microw8/" />
+<meta property="og:site_name" content="Tiny Code Christmas" />
+
+  
+    <meta property="og:image" content="https://tcc.lovebyte.party/img/favicon/red.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="red">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Tiny Code Christmas 2024
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/">     Home</a></li>
+        
+      
+        
+          <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+        
+      
+        
+          <li><a href="/about"> About</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/">     Home</a></li>
+      
+    
+      
+        <li><a href="https://lovebyte.party/">  LoveByte</a></li>
+      
+    
+      
+        <li><a href="/about"> About</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://tcc.lovebyte.party/microw8/">Tiny Code Christmas in MicroW8</a></h1>
+  <div class="post-meta">
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <p>If you&rsquo;ve already completed Tiny Code Christmas with either TIC-80 or PICO-8 and you&rsquo;re not quite sure where to go from here, Superogue has kindly ported the challenges to <a href="https://exoticorn.github.io/microw8/">MicroW8</a>! MicroW8 is a web assembly based fantasy console designed specifically for sizecoding with an optional language <a href="https://github.com/exoticorn/curlywas">CurlyWAS</a> that makes web assembly a little easier to deal with.</p>
+<p>Check out this tiny intro for the MicroW8 by exoticorn, the creator of MicroW8:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/cOaNVS0eg_A" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p>And this even tinier one by Superogue:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/uMrNDml22Ko" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<h2 id="getting-started">Getting started<a href="#getting-started" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Unlike TIC-80 and PICO-8, MicroW8 doesn&rsquo;t have its own built in editor, so you can use the text editor of your choosing, and run MicroW8 from the command line, <a href="https://exoticorn.github.io/microw8/">downloads are available on the MicroW8 site</a>. Don&rsquo;t forget to scroll down for the EXTRA challenges!</p>
+<h2 id="day-1">Day 1<a href="#day-1" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day1">Day 1</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">16</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// draw tree
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let i: i32;
+</span></span><span style="display:flex;"><span>    loop lines {
+</span></span><span style="display:flex;"><span>        let w <span style="color:#f92672">=</span> (i <span style="color:#f92672">%</span> <span style="color:#ae81ff">32</span> <span style="color:#f92672">+</span> i <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>) as f32;
+</span></span><span style="display:flex;"><span>	let y <span style="color:#f92672">=</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">64</span>) as f32;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">line</span>(<span style="color:#ae81ff">160</span>_f <span style="color:#f92672">-</span> w, y, <span style="color:#ae81ff">160</span>_f <span style="color:#f92672">+</span> w, y, <span style="color:#f92672">-</span><span style="color:#ae81ff">20</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">branch_if</span> (i :<span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)  <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">128</span><span style="color:#f92672">:</span> lines;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// draw trunk and snow bottom
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">rectangle</span>(<span style="color:#ae81ff">142</span>_f,<span style="color:#ae81ff">192</span>_f,<span style="color:#ae81ff">32</span>_f,<span style="color:#ae81ff">32</span>_f,<span style="color:#f92672">-</span><span style="color:#ae81ff">26</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rectangle</span>(<span style="color:#ae81ff">0</span>_f,<span style="color:#ae81ff">224</span>_f,<span style="color:#ae81ff">320</span>_f,<span style="color:#ae81ff">16</span>_f,<span style="color:#f92672">-</span><span style="color:#ae81ff">8</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-2">Day 2<a href="#day-2" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day2">Day 2</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">16</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// draw tree
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let i: i32;
+</span></span><span style="display:flex;"><span>    loop lines {
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> w <span style="color:#f92672">=</span> (i <span style="color:#f92672">%</span> <span style="color:#ae81ff">32</span> <span style="color:#f92672">+</span> i <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>) as f32;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y <span style="color:#f92672">=</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">64</span>) as f32;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">line</span>(<span style="color:#ae81ff">160</span>_f <span style="color:#f92672">-</span> w, y, <span style="color:#ae81ff">160</span>_f <span style="color:#f92672">+</span> w, y, <span style="color:#f92672">-</span><span style="color:#ae81ff">20</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">branch_if</span> (i :<span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)  <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">128</span><span style="color:#f92672">:</span> lines;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// draw trunk and snow bottom
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">rectangle</span>(<span style="color:#ae81ff">142</span>_f,<span style="color:#ae81ff">192</span>_f,<span style="color:#ae81ff">32</span>_f,<span style="color:#ae81ff">32</span>_f,<span style="color:#f92672">-</span><span style="color:#ae81ff">26</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rectangle</span>(<span style="color:#ae81ff">0</span>_f,<span style="color:#ae81ff">224</span>_f,<span style="color:#ae81ff">320</span>_f,<span style="color:#ae81ff">16</span>_f,<span style="color:#f92672">-</span><span style="color:#ae81ff">8</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// draw snow
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> (<span style="color:#a6e22e">time</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">60</span>_f) as i32;
+</span></span><span style="display:flex;"><span>    let i: i32 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    loop drawsnow {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> snow_wiggle <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(i as f32 <span style="color:#f92672">+</span> <span style="color:#a6e22e">time</span>()) <span style="color:#f92672">*</span> <span style="color:#ae81ff">8</span>_f) as i32;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> snow_x <span style="color:#f92672">=</span> (i <span style="color:#f92672">*</span> <span style="color:#ae81ff">931</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span> <span style="color:#f92672">+</span> snow_wiggle;
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> snow_y <span style="color:#f92672">=</span> (i <span style="color:#f92672">*</span> <span style="color:#ae81ff">357</span> <span style="color:#f92672">+</span> t) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(snow_x,snow_y,<span style="color:#f92672">-</span><span style="color:#ae81ff">8</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">branch_if</span> ( i:<span style="color:#f92672">=</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)  <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">128</span><span style="color:#f92672">:</span> drawsnow;
+</span></span><span style="display:flex;"><span>    } 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-3">Day 3<a href="#day-3" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day3">Day 3</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let x: i32;
+</span></span><span style="display:flex;"><span>    let y: i32;
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> (<span style="color:#a6e22e">time</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>_f) as i32;
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> c <span style="color:#f92672">=</span> ((x<span style="color:#f92672">+</span>y) <span style="color:#f92672">&amp;</span> (x<span style="color:#f92672">-</span>y)) <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span> <span style="color:#f92672">+</span> t;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, y, c as i32 <span style="color:#f92672">-</span> <span style="color:#ae81ff">32</span>);
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-4">Day 4<a href="#day-4" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day4">Day 4</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let x: i32;
+</span></span><span style="display:flex;"><span>    let y: i32;
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span>_f;
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> c <span style="color:#f92672">=</span> <span style="color:#a6e22e">sin</span>(x as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">37</span>_f <span style="color:#f92672">-</span> t) <span style="color:#f92672">+</span> <span style="color:#a6e22e">sin</span>(y as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">23</span>_f <span style="color:#f92672">+</span> t) <span style="color:#f92672">+</span> <span style="color:#a6e22e">sin</span>(x as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">17</span>_f <span style="color:#f92672">-</span> t) <span style="color:#f92672">+</span> t;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, y, c  as i32 <span style="color:#f92672">-</span> <span style="color:#ae81ff">32</span>);
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-5">Day 5<a href="#day-5" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day5">Day 5</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let x: i32;
+</span></span><span style="display:flex;"><span>    let y: i32;
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span>_f;
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> xc <span style="color:#f92672">=</span> (x<span style="color:#f92672">-</span><span style="color:#ae81ff">160</span>) as f32;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> yc <span style="color:#f92672">=</span> (y<span style="color:#f92672">-</span><span style="color:#ae81ff">120</span>) as f32;
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> u <span style="color:#f92672">=</span> <span style="color:#a6e22e">atan2</span>(xc,yc)<span style="color:#f92672">*</span><span style="color:#ae81ff">3</span> as f32;
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> v <span style="color:#f92672">=</span> <span style="color:#ae81ff">9999</span>_f <span style="color:#f92672">/</span> (xc<span style="color:#f92672">*</span>xc <span style="color:#f92672">+</span> yc<span style="color:#f92672">*</span>yc <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>_f);
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> c <span style="color:#f92672">=</span> (u as f32) as i32 <span style="color:#f92672">&amp;</span> (v<span style="color:#f92672">+</span>t) as i32;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, y, c  as i32 <span style="color:#f92672">-</span> <span style="color:#ae81ff">32</span>);
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-6">Day 6<a href="#day-6" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day6">Day 6</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">60</span>_f;
+</span></span><span style="display:flex;"><span>    let i:i32;
+</span></span><span style="display:flex;"><span>    loop textloop {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// calculate character position
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> x <span style="color:#f92672">=</span> i <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">-</span> t as i32 <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(x as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">16</span>_f) <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>_f <span style="color:#f92672">*</span> i as f32) as i32 <span style="color:#f92672">+</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// set text to graphics mode and set character position
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">printChar</span>(<span style="color:#ae81ff">5</span>);<span style="color:#a6e22e">setCursorPosition</span>(x,y);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// print character
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> textofs <span style="color:#f92672">=</span> ((i<span style="color:#f92672">+</span>t as i32<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>)<span style="color:#f92672">%</span><span style="color:#ae81ff">40</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">printChar</span>(textofs<span style="color:#f92672">?</span><span style="color:#ae81ff">0x20000</span>); 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        branch_if i :<span style="color:#f92672">=</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">40</span><span style="color:#f92672">:</span> textloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#ae81ff">0x20000</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;hello tiny code christmas 2024&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-7">Day 7<a href="#day-7" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day7">Day 7</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let x: i32;
+</span></span><span style="display:flex;"><span>    let y: i32;
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>_f;
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> c <span style="color:#f92672">=</span> <span style="color:#a6e22e">sin</span>(x as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">37</span>_f <span style="color:#f92672">-</span> t) <span style="color:#f92672">+</span> <span style="color:#a6e22e">sin</span>(y as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">23</span>_f <span style="color:#f92672">+</span> t) <span style="color:#f92672">+</span> <span style="color:#a6e22e">sin</span>(x as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">17</span>_f <span style="color:#f92672">-</span> t) <span style="color:#f92672">+</span> t <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>_f;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, y, (<span style="color:#a6e22e">sin</span>(c)<span style="color:#f92672">*</span><span style="color:#ae81ff">7</span>_f) as i32 <span style="color:#f92672">+</span> <span style="color:#ae81ff">72</span>);
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// doublesize scroller
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let <span style="color:#66d9ef">inline</span> tt <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">60</span>_f;
+</span></span><span style="display:flex;"><span>    let i:i32;
+</span></span><span style="display:flex;"><span>    loop textloop {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// calculate character position
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> x <span style="color:#f92672">=</span> i <span style="color:#f92672">*</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">-</span> tt as i32 <span style="color:#f92672">%</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(x as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">16</span>_f) <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>_f <span style="color:#f92672">*</span> i as f32) as i32 <span style="color:#f92672">+</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// set text to graphics mode + set double text scale
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">printChar</span>(<span style="color:#ae81ff">5</span>);<span style="color:#a6e22e">printChar</span>(<span style="color:#ae81ff">30</span>);<span style="color:#a6e22e">printChar</span>(<span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// print character with shadow
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> textofs <span style="color:#f92672">=</span> ((i<span style="color:#f92672">+</span>tt as i32<span style="color:#f92672">/</span><span style="color:#ae81ff">20</span>)<span style="color:#f92672">%</span><span style="color:#ae81ff">40</span>);
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">setTextColor</span>(<span style="color:#ae81ff">0</span>);<span style="color:#a6e22e">setCursorPosition</span>(x<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>,y<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>);<span style="color:#a6e22e">printChar</span>(textofs<span style="color:#f92672">?</span><span style="color:#ae81ff">0x20000</span>); 
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">setTextColor</span>(i<span style="color:#f92672">%</span><span style="color:#ae81ff">8</span><span style="color:#f92672">+</span><span style="color:#ae81ff">36</span>);<span style="color:#a6e22e">setCursorPosition</span>(x,y);<span style="color:#a6e22e">printChar</span>(textofs<span style="color:#f92672">?</span><span style="color:#ae81ff">0x20000</span>); 
+</span></span><span style="display:flex;"><span>        branch_if i :<span style="color:#f92672">=</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">40</span><span style="color:#f92672">:</span> textloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#ae81ff">0x20000</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;Hello Tiny Code Christmas 2024&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-8">Day 8<a href="#day-8" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day8">Day 8</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//    cls(0);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>();
+</span></span><span style="display:flex;"><span>    let i:i32;
+</span></span><span style="display:flex;"><span>    loop circloop {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// calculate character position
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> x <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(i as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">6</span>_f <span style="color:#f92672">+</span> t) <span style="color:#f92672">*</span> <span style="color:#ae81ff">99</span>_f) <span style="color:#f92672">+</span> <span style="color:#ae81ff">160</span>_f;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(i as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">7</span>_f <span style="color:#f92672">+</span> t) <span style="color:#f92672">*</span> <span style="color:#ae81ff">99</span>_f) <span style="color:#f92672">+</span> <span style="color:#ae81ff">120</span>_f;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">circle</span>(x,y,<span style="color:#ae81ff">8</span>_f,i<span style="color:#f92672">%</span><span style="color:#ae81ff">10</span><span style="color:#f92672">+</span><span style="color:#ae81ff">66</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// set text to graphics mode and set character position
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        branch_if i :<span style="color:#f92672">=</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">16</span><span style="color:#f92672">:</span> circloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>    let j:i32;
+</span></span><span style="display:flex;"><span>    loop copyloop {
+</span></span><span style="display:flex;"><span>	j<span style="color:#f92672">?</span><span style="color:#ae81ff">0x80</span> <span style="color:#f92672">=</span> j<span style="color:#f92672">?</span><span style="color:#ae81ff">0x82</span>;
+</span></span><span style="display:flex;"><span>        branch_if j :<span style="color:#f92672">=</span> (j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> (<span style="color:#ae81ff">320</span><span style="color:#f92672">*</span><span style="color:#ae81ff">240</span>)<span style="color:#f92672">:</span> copyloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-9">Day 9<a href="#day-9" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day9">Day 9</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//    cls(0);
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>();
+</span></span><span style="display:flex;"><span>    let i:i32;
+</span></span><span style="display:flex;"><span>    loop circloop {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// calculate character position
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> sx <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(i as f32 <span style="color:#f92672">+</span> t) <span style="color:#f92672">*</span> <span style="color:#ae81ff">160</span>_f) as i32 <span style="color:#f92672">+</span> <span style="color:#ae81ff">160</span>;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> sy <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(i as f32 <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>_f <span style="color:#f92672">-</span> t) <span style="color:#f92672">*</span> <span style="color:#ae81ff">99</span>_f) as i32  <span style="color:#f92672">+</span> <span style="color:#ae81ff">120</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	let xi:i32;
+</span></span><span style="display:flex;"><span>	let yi:i32;
+</span></span><span style="display:flex;"><span>        loop shape {
+</span></span><span style="display:flex;"><span>	  <span style="color:#a6e22e">setPixel</span>(sx<span style="color:#f92672">+</span>xi,sy<span style="color:#f92672">+</span>yi,(<span style="color:#a6e22e">getPixel</span>(sx<span style="color:#f92672">+</span>xi,sy<span style="color:#f92672">+</span>yi)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">%</span><span style="color:#ae81ff">16</span>);
+</span></span><span style="display:flex;"><span>          branch_if xi :<span style="color:#f92672">=</span> (xi <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">16</span><span style="color:#f92672">:</span> shape;     
+</span></span><span style="display:flex;"><span>          branch_if yi :<span style="color:#f92672">=</span> (yi <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">16</span><span style="color:#f92672">:</span> shape;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// set text to graphics mode and set character position
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        branch_if i :<span style="color:#f92672">=</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">16</span><span style="color:#f92672">:</span> circloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-10">Day 10<a href="#day-10" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day10">Day 10</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>() <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span>_f;
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> part <span style="color:#f92672">=</span> (<span style="color:#a6e22e">time</span>() as i32) <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> fade <span style="color:#f92672">=</span> <span style="color:#a6e22e">abs</span>(<span style="color:#a6e22e">sin</span>(t<span style="color:#f92672">*</span><span style="color:#ae81ff">6.28</span><span style="color:#f92672">/</span><span style="color:#ae81ff">32</span>_f));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    let x: i32;
+</span></span><span style="display:flex;"><span>    let y: i32;
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> xc <span style="color:#f92672">=</span> (x<span style="color:#f92672">-</span><span style="color:#ae81ff">160</span>) as f32;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> yc <span style="color:#f92672">=</span> (y<span style="color:#f92672">-</span><span style="color:#ae81ff">120</span>) as f32;
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// handle effect
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let u: f32;
+</span></span><span style="display:flex;"><span>	let v: f32;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (part <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>           u <span style="color:#f92672">=</span> <span style="color:#a6e22e">atan2</span>(xc,yc)<span style="color:#f92672">*</span><span style="color:#ae81ff">18</span>_f;
+</span></span><span style="display:flex;"><span>           v <span style="color:#f92672">=</span> <span style="color:#ae81ff">19999</span>_f <span style="color:#f92672">/</span> (xc<span style="color:#f92672">*</span>xc <span style="color:#f92672">+</span> yc<span style="color:#f92672">*</span>yc <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>_f);
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>	   let <span style="color:#66d9ef">inline</span> z <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sqrt</span>(xc<span style="color:#f92672">*</span>xc<span style="color:#f92672">+</span>yc<span style="color:#f92672">*</span>yc)<span style="color:#f92672">/</span><span style="color:#ae81ff">16</span>_f<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>_f<span style="color:#f92672">+</span><span style="color:#ae81ff">0.1</span>);
+</span></span><span style="display:flex;"><span>           u <span style="color:#f92672">=</span> xc <span style="color:#f92672">/</span> z;
+</span></span><span style="display:flex;"><span>           v <span style="color:#f92672">=</span> yc <span style="color:#f92672">/</span> z;
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> c <span style="color:#f92672">=</span> ((u<span style="color:#f92672">+</span>t) as i32 <span style="color:#f92672">&amp;</span> (v<span style="color:#f92672">+</span>t) as i32) <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">15</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, y, (fade <span style="color:#f92672">*</span> c as f32) as i32  <span style="color:#f92672">+</span> part<span style="color:#f92672">*</span><span style="color:#ae81ff">16</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-1-extra">Day 1 Extra<a href="#day-1-extra" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day1extra">Day 1 Extra</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// set RGB palette
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let p:i32;
+</span></span><span style="display:flex;"><span>    loop palloop {
+</span></span><span style="display:flex;"><span>	(p<span style="color:#f92672">&lt;&lt;</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">?</span><span style="color:#ae81ff">0x13000</span><span style="color:#f92672">=</span> p;
+</span></span><span style="display:flex;"><span>	(p<span style="color:#f92672">&lt;&lt;</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">?</span><span style="color:#ae81ff">0x13001</span><span style="color:#f92672">=</span> p<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>	(p<span style="color:#f92672">&lt;&lt;</span><span style="color:#ae81ff">2</span>)<span style="color:#f92672">?</span><span style="color:#ae81ff">0x13002</span><span style="color:#f92672">=</span> p<span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>        branch_if p :<span style="color:#f92672">=</span> (p<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">256</span><span style="color:#f92672">:</span> palloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// fire effect
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let x:i32;
+</span></span><span style="display:flex;"><span>    let y:i32;
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> c<span style="color:#f92672">=</span><span style="color:#a6e22e">getPixel</span>(x,y);
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> cl<span style="color:#f92672">=</span><span style="color:#a6e22e">getPixel</span>(x<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> cb<span style="color:#f92672">=</span><span style="color:#a6e22e">getPixel</span>(x,y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> cr<span style="color:#f92672">=</span><span style="color:#a6e22e">getPixel</span>(x<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,y<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, <span style="color:#ae81ff">239</span>, <span style="color:#a6e22e">random</span>());
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, y, (c<span style="color:#f92672">+</span>cl<span style="color:#f92672">+</span>cb<span style="color:#f92672">+</span>cb<span style="color:#f92672">+</span>cr)<span style="color:#f92672">/</span><span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-2-extra">Day 2 Extra<a href="#day-2-extra" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day2extra">Day 2 Extra</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    let x:i32;
+</span></span><span style="display:flex;"><span>    let y:i32;
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// position of metaball 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> x1 <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(t <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>_f) <span style="color:#f92672">*</span> <span style="color:#ae81ff">199</span>_f) <span style="color:#f92672">+</span> <span style="color:#ae81ff">160</span>_f;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y1 <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(t <span style="color:#f92672">*</span> <span style="color:#ae81ff">4</span>_f) <span style="color:#f92672">*</span> <span style="color:#ae81ff">99</span>_f) <span style="color:#f92672">+</span> <span style="color:#ae81ff">120</span>_f;
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// position of metaball 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> x2 <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(t <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>_f) <span style="color:#f92672">*</span> <span style="color:#ae81ff">199</span>_f) <span style="color:#f92672">+</span> <span style="color:#ae81ff">160</span>_f;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y2 <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>(t <span style="color:#f92672">*</span> <span style="color:#ae81ff">1</span>_f) <span style="color:#f92672">*</span> <span style="color:#ae81ff">99</span>_f) <span style="color:#f92672">+</span> <span style="color:#ae81ff">120</span>_f;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// distance of the 2 metaballs to the pixel position 	
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> dist1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">399</span>_f <span style="color:#f92672">/</span> <span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">pow</span>(x1<span style="color:#f92672">-</span>x as f32,<span style="color:#ae81ff">2</span>_f)<span style="color:#f92672">+</span><span style="color:#a6e22e">pow</span>(y1<span style="color:#f92672">-</span>y as f32,<span style="color:#ae81ff">2</span>_f));
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> dist2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">399</span>_f <span style="color:#f92672">/</span> <span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">pow</span>(x2<span style="color:#f92672">-</span>x as f32,<span style="color:#ae81ff">2</span>_f)<span style="color:#f92672">+</span><span style="color:#a6e22e">pow</span>(y2<span style="color:#f92672">-</span>y as f32,<span style="color:#ae81ff">2</span>_f));
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> c<span style="color:#f92672">=</span><span style="color:#a6e22e">min</span>(dist1<span style="color:#f92672">+</span>dist2,<span style="color:#ae81ff">15</span>_f) as i32;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// draw pixel
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">setPixel</span>(x, y, c <span style="color:#f92672">+</span> <span style="color:#ae81ff">64</span>);
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-3-extra">Day 3 Extra<a href="#day-3-extra" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day3extra">Day 3 Extra</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    let i:i32;<span style="color:#a6e22e">randomSeed</span>(<span style="color:#ae81ff">0x1111</span>);
+</span></span><span style="display:flex;"><span>    loop initloop {
+</span></span><span style="display:flex;"><span>	i<span style="color:#f92672">?</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">random</span>(); 
+</span></span><span style="display:flex;"><span>        branch_if i :<span style="color:#f92672">=</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">64</span><span style="color:#f92672">:</span> initloop;     
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    let j:i32;
+</span></span><span style="display:flex;"><span>    let k:i32;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>();
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// check all points against all points
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> x1 <span style="color:#f92672">=</span>((j<span style="color:#f92672">?</span><span style="color:#ae81ff">0</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> (<span style="color:#ae81ff">0</span><span style="color:#f92672">!</span>TIME_MS <span style="color:#f92672">/</span> <span style="color:#ae81ff">16</span>)) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span>;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y1 <span style="color:#f92672">=</span>((j<span style="color:#f92672">?</span><span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> (<span style="color:#ae81ff">0</span><span style="color:#f92672">!</span>TIME_MS <span style="color:#f92672">/</span> <span style="color:#ae81ff">24</span>)) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span>;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> x2 <span style="color:#f92672">=</span> k<span style="color:#f92672">?</span><span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y2 <span style="color:#f92672">=</span> k<span style="color:#f92672">?</span><span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> dist <span style="color:#f92672">=</span> <span style="color:#a6e22e">sqrt</span>( ((x2<span style="color:#f92672">-</span>x1)<span style="color:#f92672">*</span>(x2<span style="color:#f92672">-</span>x1)<span style="color:#f92672">+</span>(y2<span style="color:#f92672">-</span>y1)<span style="color:#f92672">*</span>(y2<span style="color:#f92672">-</span>y1)) as f32 ) ;
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> (dist<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">30</span>_f) {
+</span></span><span style="display:flex;"><span>           <span style="color:#a6e22e">line</span>(x1 as f32, y1 as f32, x2 as f32, y2 as f32, k <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>);
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>        branch_if j :<span style="color:#f92672">=</span> (j <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">63</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if k :<span style="color:#f92672">=</span> (k <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">63</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-4-extra">Day 4 Extra<a href="#day-4-extra" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day4extra">Day 4 Extra</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let x: i32;
+</span></span><span style="display:flex;"><span>    let y: i32;
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>();
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> xc <span style="color:#f92672">=</span> (x<span style="color:#f92672">-</span><span style="color:#ae81ff">160</span>) as f32;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> yc <span style="color:#f92672">=</span> (y<span style="color:#f92672">-</span><span style="color:#ae81ff">120</span>) as f32;
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> u <span style="color:#f92672">=</span> (xc<span style="color:#f92672">*</span><span style="color:#a6e22e">cos</span>(t)<span style="color:#f92672">-</span>yc<span style="color:#f92672">*</span><span style="color:#a6e22e">sin</span>(t));
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> v <span style="color:#f92672">=</span> (xc<span style="color:#f92672">*</span><span style="color:#a6e22e">sin</span>(t)<span style="color:#f92672">+</span>yc<span style="color:#f92672">*</span><span style="color:#a6e22e">cos</span>(t));
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> c <span style="color:#f92672">=</span> (u as f32) as i32 <span style="color:#f92672">&amp;</span> (v<span style="color:#f92672">+</span>t) as i32;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, y, c<span style="color:#f92672">/</span><span style="color:#ae81ff">8</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">80</span>);
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-5-extra">Day 5 Extra<a href="#day-5-extra" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day5extra">Day 5 Extra</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let x: i32;
+</span></span><span style="display:flex;"><span>    let y: i32;
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>();
+</span></span><span style="display:flex;"><span>    loop drawloop {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// floor perspective
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	let <span style="color:#66d9ef">inline</span> z <span style="color:#f92672">=</span> <span style="color:#a6e22e">abs</span>(y as f32 <span style="color:#f92672">-</span> <span style="color:#ae81ff">100</span>_f)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>_f;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> xc <span style="color:#f92672">=</span> (x<span style="color:#f92672">-</span><span style="color:#ae81ff">160</span>) as f32 <span style="color:#f92672">*</span> <span style="color:#ae81ff">64</span>_f <span style="color:#f92672">/</span> z;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> yc <span style="color:#f92672">=</span> (y<span style="color:#f92672">-</span><span style="color:#ae81ff">120</span>) as f32 <span style="color:#f92672">*</span> <span style="color:#ae81ff">256</span>_f <span style="color:#f92672">/</span> z;
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// rotate floor
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        let <span style="color:#66d9ef">inline</span> u <span style="color:#f92672">=</span> (xc<span style="color:#f92672">*</span><span style="color:#a6e22e">cos</span>(t)<span style="color:#f92672">-</span>yc<span style="color:#f92672">*</span><span style="color:#a6e22e">sin</span>(t));
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> v <span style="color:#f92672">=</span> (xc<span style="color:#f92672">*</span><span style="color:#a6e22e">sin</span>(t)<span style="color:#f92672">+</span>yc<span style="color:#f92672">*</span><span style="color:#a6e22e">cos</span>(t));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> floorcolor <span style="color:#f92672">=</span> ((u as i32 <span style="color:#f92672">&amp;</span> (v<span style="color:#f92672">+</span>t) as i32) <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span> <span style="color:#f92672">&amp;</span> <span style="color:#ae81ff">15</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">64</span>; 
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> skycolor <span style="color:#f92672">=</span> y<span style="color:#f92672">/</span><span style="color:#ae81ff">8</span><span style="color:#f92672">+</span>y<span style="color:#f92672">%</span><span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>;
+</span></span><span style="display:flex;"><span>        let <span style="color:#66d9ef">inline</span> c <span style="color:#f92672">=</span> <span style="color:#a6e22e">select</span>(y<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">100</span>, floorcolor, skycolor);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x, y, c);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        branch_if x :<span style="color:#f92672">=</span> (x <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">320</span><span style="color:#f92672">:</span> drawloop;     
+</span></span><span style="display:flex;"><span>        branch_if y :<span style="color:#f92672">=</span> (y <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> drawloop;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-6-extra">Day 6 Extra<a href="#day-6-extra" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day1extra">Day 1 Extra</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cls</span>(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// vertical rasters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let lx: i32;
+</span></span><span style="display:flex;"><span>    let ly: i32;
+</span></span><span style="display:flex;"><span>    loop rasterloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> sv <span style="color:#f92672">=</span> <span style="color:#a6e22e">sin</span>(ly as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>_f <span style="color:#f92672">+</span> t) <span style="color:#f92672">*</span> <span style="color:#ae81ff">64</span>_f <span style="color:#f92672">+</span> lx as f32 <span style="color:#f92672">+</span> <span style="color:#ae81ff">64</span>_f;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">line</span>(<span style="color:#ae81ff">0</span>_f, sv, <span style="color:#ae81ff">320</span>_f, sv,(<span style="color:#ae81ff">16</span><span style="color:#f92672">*</span>ly) <span style="color:#f92672">+</span> lx <span style="color:#f92672">+</span> <span style="color:#ae81ff">32</span>);
+</span></span><span style="display:flex;"><span>        branch_if lx :<span style="color:#f92672">=</span> (lx <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">16</span><span style="color:#f92672">:</span> rasterloop;     
+</span></span><span style="display:flex;"><span>        branch_if ly :<span style="color:#f92672">=</span> (ly <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">8</span><span style="color:#f92672">:</span> rasterloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// kefrens bars
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    let kx: i32;
+</span></span><span style="display:flex;"><span>    let ky: i32;
+</span></span><span style="display:flex;"><span>    loop kefrensloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> sv <span style="color:#f92672">=</span> <span style="color:#a6e22e">sin</span>(ky as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">23</span>_f <span style="color:#f92672">+</span> t) <span style="color:#f92672">*</span> <span style="color:#a6e22e">sin</span>(ky as f32 <span style="color:#f92672">/</span> <span style="color:#ae81ff">13</span>_f <span style="color:#f92672">+</span> t <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>_f) <span style="color:#f92672">*</span> <span style="color:#ae81ff">128</span>_f <span style="color:#f92672">+</span> kx as f32 <span style="color:#f92672">+</span> <span style="color:#ae81ff">160</span>_f;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">line</span>(sv, ky as f32, sv, <span style="color:#ae81ff">240</span>_f, kx<span style="color:#f92672">-</span><span style="color:#ae81ff">16</span>);
+</span></span><span style="display:flex;"><span>        branch_if kx :<span style="color:#f92672">=</span> (kx <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">16</span><span style="color:#f92672">:</span> kefrensloop;     
+</span></span><span style="display:flex;"><span>        branch_if ky :<span style="color:#f92672">=</span> (ky <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">240</span><span style="color:#f92672">:</span> kefrensloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="day-7-extra">Day 7 Extra<a href="#day-7-extra" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Go to <a href="/day1extra">Day 1 Extra</a> to see the challenge.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>include <span style="color:#e6db74">&#34;microw8-api.cwa&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>export fn <span style="color:#a6e22e">upd</span>() {
+</span></span><span style="display:flex;"><span>    let <span style="color:#66d9ef">inline</span> t <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>();
+</span></span><span style="display:flex;"><span>    let c: i32;
+</span></span><span style="display:flex;"><span>    let i: i32;
+</span></span><span style="display:flex;"><span>    loop snowflakeloop {
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> r <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>_f <span style="color:#f92672">*</span> c as f32 <span style="color:#f92672">*</span> <span style="color:#a6e22e">asin</span>(<span style="color:#a6e22e">cos</span>(t<span style="color:#f92672">+</span>c as f32));
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> x <span style="color:#f92672">=</span> (<span style="color:#a6e22e">sin</span>((i<span style="color:#f92672">+</span>c) as f32 <span style="color:#f92672">-</span>t <span style="color:#f92672">+</span> c as f32) <span style="color:#f92672">*</span> r) <span style="color:#f92672">+</span> <span style="color:#ae81ff">160</span>_f;
+</span></span><span style="display:flex;"><span>	let <span style="color:#66d9ef">inline</span> y <span style="color:#f92672">=</span> <span style="color:#a6e22e">cos</span>((i<span style="color:#f92672">+</span>c) as f32 <span style="color:#f92672">-</span> t <span style="color:#f92672">+</span> c as f32) <span style="color:#f92672">*</span> r <span style="color:#f92672">+</span> <span style="color:#ae81ff">120</span>_f;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">setPixel</span>(x as i32, y as i32, <span style="color:#f92672">-</span>c);
+</span></span><span style="display:flex;"><span>        branch_if i :<span style="color:#f92672">=</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">18</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">360</span><span style="color:#f92672">:</span> snowflakeloop;     
+</span></span><span style="display:flex;"><span>        branch_if c :<span style="color:#f92672">=</span> (c <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">16</span><span style="color:#f92672">:</span> snowflakeloop;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>More coming soon!</p>
+<h1 id="sharing-is-caring">Sharing is Caring!<a href="#sharing-is-caring" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>If you feel like it, why not share what you’ve done with us on the <a href="https://discord.gg/pUS5kCJTzp">LoveByte Discord</a>, #lovebyte on IRCnet, or share on <a href="https://mobile.twitter.com/lovebyteparty">Twitter</a> and <a href="https://graphics.social/@lovebyteparty">Mastodon</a> using the hashtag #lovebytetcc</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2024 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://tcc.lovebyte.party/assets/main.js"></script>
+<script src="https://tcc.lovebyte.party/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
